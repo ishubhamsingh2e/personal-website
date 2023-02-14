@@ -1,0 +1,1132 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load custom_tag %}
+{% load compress %}
+
+{% block head %}
+    <title>Portfolio</title>
+{% endblock head %}
+
+{% block body %}
+
+    <body
+        class="home prevent-select page-template page-template-template-layout-builder page-template-template-layout-builder-php page page-id-115 light-skin elementor-default elementor-kit-7 elementor-page elementor-page-115">
+    <div class="container-page">
+        <div class="preloader">
+            <div class="centrize full-width">
+                <div class="vertical-center">
+                    <div class="spinner-logo"><img src="{% static 'images/logo.png' %}" alt="logo"/>
+                        <div class="spinner-dot"></div>
+                        <div class="spinner spinner-line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header class="header">
+            <div class="header__builder">
+                <div data-elementor-type="wp-post" data-elementor-id="91" class="elementor elementor-91">
+                    <section
+                        class="elementor-section elementor-top-section elementor-element elementor-element-852e3c9 elementor-section-content-middle elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                        data-id="852e3c9" data-element_type="section">
+                        <div class="elementor-container elementor-column-gap-no">
+                            <div
+                                class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-ab1238c"
+                                data-id="ab1238c" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div
+                                        class="elementor-element elementor-element-6b2395b elementor-widget elementor-widget-image"
+                                        data-id="6b2395b" data-element_type="widget" data-widget_type="image.default">
+                                        <div class="elementor-widget-container"><a href="/"> <img decoding="async"
+                                                                                                        width="228"
+                                                                                                        height="38"
+                                                                                                        src="{% static 'images/logo.png' %}"
+                                                                                                        class="attachment-full size-full"
+                                                                                                        alt=""
+                                                                                                        loading="lazy"/>
+                                        </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-2c253e3"
+                                data-id="2c253e3" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div
+                                        class="elementor-element elementor-element-c48ea9c elementor-widget elementor-widget-header-menu"
+                                        data-id="c48ea9c" data-element_type="widget"
+                                        data-widget_type="header-menu.default">
+                                        <div class="elementor-widget-container"><a href="#" class="switcher-btn"> <span
+                                            class="sw-before"> <svg xmlns="http://www.w3.org/2000/svg"
+                                                                    width="23" height="23" viewBox="0 0 23 23">
+                                                        <path id="Dark_Theme" fill="#000"
+                                                              d="M1759.46,111.076a0.819,0.819,0,0,0-.68.147,8.553,8.553,0,0,1-2.62,1.537,8.167,8.167,0,0,1-2.96.531,8.655,8.655,0,0,1-8.65-8.682,9.247,9.247,0,0,1,.47-2.864,8.038,8.038,0,0,1,1.42-2.54,0.764,0.764,0,0,0-.12-1.063,0.813,0.813,0,0,0-.68-0.148,11.856,11.856,0,0,0-6.23,4.193,11.724,11.724,0,0,0,1,15.387,11.63,11.63,0,0,0,19.55-5.553A0.707,0.707,0,0,0,1759.46,111.076Zm-4.5,6.172a10.137,10.137,0,0,1-14.29-14.145,10.245,10.245,0,0,1,3.38-2.836c-0.14.327-.29,0.651-0.41,1.006a9.908,9.908,0,0,0-.56,3.365,10.162,10.162,0,0,0,10.15,10.189,9.776,9.776,0,0,0,3.49-.62,11.659,11.659,0,0,0,1.12-.473A10.858,10.858,0,0,1,1754.96,117.248Z"
+                                                              transform="translate(-1737 -98)"></path>
+                                                    </svg> </span> <span class="sw-after"> <svg
+                                            xmlns="http://www.w3.org/2000/svg" width="22.22" height="22.313"
+                                            viewBox="0 0 22.22 22.313">
+                                                        <path id="Light_Theme" fill="#fff"
+                                                              d="M1752.49,105.511a5.589,5.589,0,0,0-3.94-1.655,5.466,5.466,0,0,0-3.94,1.655,5.61,5.61,0,0,0,3.94,9.566,5.473,5.473,0,0,0,3.94-1.653,5.643,5.643,0,0,0,1.65-3.957A5.516,5.516,0,0,0,1752.49,105.511Zm-1.06,6.85a4.1,4.1,0,0,1-5.76,0,4.164,4.164,0,0,1,0-5.788A4.083,4.083,0,0,1,1751.43,112.361Zm7.47-3.662h-2.27a0.768,0.768,0,0,0,0,1.536h2.27A0.768,0.768,0,0,0,1758.9,108.7Zm-10.35,8.12a0.777,0.777,0,0,0-.76.769v2.274a0.777,0.777,0,0,0,.76.767,0.786,0.786,0,0,0,.77-0.767v-2.274A0.786,0.786,0,0,0,1748.55,116.819Zm7.85-.531-1.62-1.624a0.745,0.745,0,0,0-1.06,0,0.758,0.758,0,0,0,0,1.063l1.62,1.625a0.747,0.747,0,0,0,1.06,0A0.759,0.759,0,0,0,1756.4,116.288ZM1748.55,98.3a0.777,0.777,0,0,0-.76.768v2.273a0.778,0.778,0,0,0,.76.768,0.787,0.787,0,0,0,.77-0.768V99.073A0.786,0.786,0,0,0,1748.55,98.3Zm7.88,3.278a0.744,0.744,0,0,0-1.06,0l-1.62,1.624a0.758,0.758,0,0,0,0,1.063,0.745,0.745,0,0,0,1.06,0l1.62-1.624A0.758,0.758,0,0,0,1756.43,101.583Zm-15.96,7.116h-2.26a0.78,0.78,0,0,0-.77.768,0.76,0.76,0,0,0,.77.768h2.26A0.768,0.768,0,0,0,1740.47,108.7Zm2.88,5.965a0.745,0.745,0,0,0-1.06,0l-1.62,1.624a0.759,0.759,0,0,0,0,1.064,0.747,0.747,0,0,0,1.06,0l1.62-1.625A0.758,0.758,0,0,0,1743.35,114.664Zm0-11.457-1.62-1.624a0.744,0.744,0,0,0-1.06,0,0.758,0.758,0,0,0,0,1.063l1.62,1.624a0.745,0.745,0,0,0,1.06,0A0.758,0.758,0,0,0,1743.35,103.207Z"
+                                                              transform="translate(-1737.44 -98.313)"></path>
+                                                    </svg> </span> </a> <a href="#"
+                                                                           class="menu-btn"><span></span><span></span></a>
+                                            <div class="menu-full-overlay">
+                                                <div class="menu-full-container">
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                                <div class="menu-full">
+                                                                    <ul id="menu-main-menu" class="menu-full">
+                                                                        <li id="menu-item-606"
+                                                                            class=" menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item ">
+                                                                            <a class=" splitting-text-anim-2"
+                                                                               data-splitting="chars" href="/">Home</a>
+                                                                        </li>
+                                                                        <li id="menu-item-1936"
+                                                                            class=" menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item ">
+                                                                            <a class=" splitting-text-anim-2"
+                                                                               data-splitting="chars"
+                                                                               href="/#services-section">Services</a>
+                                                                        </li>
+                                                                        <li id="menu-item-1938"
+                                                                            class=" menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item ">
+                                                                            <a class=" splitting-text-anim-2"
+                                                                               data-splitting="chars"
+                                                                               href="/#skills-section">Skills</a>
+                                                                        </li>
+                                                                        <li id="menu-item-608"
+                                                                            class=" menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item ">
+                                                                            <a class=" splitting-text-anim-2"
+                                                                               data-splitting="chars"
+                                                                               href="/#works-section">Works</a>
+                                                                        </li>
+                                                                        <li id="menu-item-607"
+                                                                            class=" menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item ">
+                                                                            <a class=" splitting-text-anim-2"
+                                                                               data-splitting="chars"
+                                                                               href="/#resume-section">Resume</a>
+                                                                        </li>
+                                                                        <li id="menu-item-610"
+                                                                            class=" menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item ">
+                                                                            <a class=" splitting-text-anim-2"
+                                                                               data-splitting="chars"
+                                                                               href="/#blog-section">Blog</a>
+                                                                        </li>
+                                                                        <li id="menu-item-611"
+                                                                            class=" menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item ">
+                                                                            <a class=" splitting-text-anim-2"
+                                                                               data-splitting="chars"
+                                                                               href="/#contact-section">Contact</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="menu-social-links"><a
+                                                                    href="{{ admin_data.linkedin }}" target="blank"
+                                                                    class="scrolla-element-anim-1" title="linkedin">
+                                                                    <i class="fa-brands fa-linkedin-in"></i> </a> <a
+                                                                    href="{{ admin_data.dev }}" target="blank"
+                                                                    class="scrolla-element-anim-1" title="dev">
+                                                                    <i class="fab fa-dev"></i> </a> <a
+                                                                    href="{{ admin_data.github }}" target="blank"
+                                                                    class="scrolla-element-anim-1" title="github">
+                                                                    <i class="fab fa-github"></i> </a>
+                                                                </div>
+                                                                <div class="v-line-block"><span></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="menu-overlay"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </header>
+        <div class="wrapper">
+            <div id="post-115" class="post-115 page type-page status-publish hentry">
+                <div data-elementor-type="wp-page" data-elementor-id="115" class="elementor elementor-115">
+
+                    <section
+                        class="elementor-section elementor-top-section elementor-element elementor-element-5928fe4 elementor-section-height-min-height elementor-section-content-middle lui-gradient-top elementor-section-boxed elementor-section-height-default elementor-section-items-middle"
+                        data-id="5928fe4" data-element_type="section" id="started-section">
+                        <div class="elementor-container elementor-column-gap-default">
+                            <div
+                                class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f7cb440"
+                                data-id="f7cb440" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div
+                                        class="elementor-element elementor-element-e6ecb78 v-line v-line-left elementor-widget elementor-widget-hero-image"
+                                        data-id="e6ecb78" data-element_type="widget"
+                                        data-widget_type="portfolio-hero-image.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="section hero-started">
+                                                <div class="content scrolla-element-anim-1 scroll-animate"
+                                                     data-animate="active">
+                                                    <div class="titles">
+                                                        <div class="lui-subtitle"> <span> Hello, <b>my name is</b>
+                                                            </span></div>
+                                                        <h1 class="title splitting-text-anim-1 scroll-animate"
+                                                            data-splitting="chars" data-animate="active"> <span>
+                                                                <b>Shubham</b> Singh </span></h1>
+                                                        <div class="label lui-subtitle"> I am <strong>Aspiring Data
+                                                            Scientist</strong></div>
+                                                    </div>
+                                                    <div class="description">
+                                                        <div>
+                                                            <p>{{ admin_data.bio }}</p>
+                                                        </div>
+                                                        <div class="social-links">
+                                                            <a target="_blank" rel="nofollow"
+                                                               href="{{ admin_data.dev }}"><i aria-hidden="true"
+                                                                                              class="fab fa-dev"></i></a>
+                                                            <a target="_blank" rel="nofollow"
+                                                               href="{{ admin_data.linkedin }}"> <i aria-hidden="true"
+                                                                                                    class="fab fa-linkedin-in"></i>
+                                                            </a>
+                                                            <a target="_blank" rel="nofollow"
+                                                               href="{{ admin_data.github }}"> <i aria-hidden="true"
+                                                                                                  class="fab fa-github"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bts">
+                                                        <a target="_blank" href="{{ admin_data.cvLink }}" class="btn">
+                                                            <span>Download CV</span> </a>
+                                                        <a href="#skills-section" class="btn-lnk"> My Skills </a>
+                                                    </div>
+                                                </div>
+                                                <div class="slide scrolla-element-anim-1 scroll-animate"
+                                                     data-animate="active"><img decoding="async"
+                                                                                src="{% static 'images/me.png' %}"
+                                                                                alt="me"/>
+                                                    <span class="circle circle-1"></span> <span class="circle img-1"
+                                                                                                style="background-image: url({% static 'images/assets/pat-1.png' %});"></span>
+                                                    <span class="circle img-2"
+                                                          style="background-image: url({% static 'images/assets/pat-2.png' %});"></span>
+                                                    <span class="circle img-3"
+                                                          style="background-image: url({% static 'images/assets/pat-2.png' %});"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="elementor-element elementor-element-1d7818b elementor-absolute elementor-widget elementor-widget-portfolio-bgtitle"
+                                        data-id="1d7818b" data-element_type="widget"
+                                        data-settings="{&quot;_position&quot;:&quot;absolute&quot;}"
+                                        data-widget_type="portfolio-bgtitle.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="lui-bgtitle"><span> Analyst </span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section
+                        class="elementor-section elementor-top-section elementor-element elementor-element-3d17001 elementor-section-full_width lui-gradient-bottom elementor-section-height-default elementor-section-height-default"
+                        data-id="3d17001" data-element_type="section" id="services-section">
+                        <div class="elementor-container elementor-column-gap-no">
+                            <div
+                                class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f380a5d"
+                                data-id="f380a5d" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <section
+                                        class="elementor-section elementor-inner-section elementor-element elementor-element-e780b82 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                        data-id="e780b82" data-element_type="section">
+                                        <div class="elementor-container elementor-column-gap-default">
+                                            <div
+                                                class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-8a1bbab"
+                                                data-id="8a1bbab" data-element_type="column">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                    <div
+                                                        class="elementor-element elementor-element-56e9e7d elementor-widget elementor-widget-portfolio-section-heading"
+                                                        data-id="56e9e7d" data-element_type="widget"
+                                                        data-widget_type="portfolio-section-heading.default">
+                                                        <div class="elementor-widget-container">
+                                                            <div class="m-titles">
+                                                                <h2 class="m-title splitting-text-anim-1 scroll-animate"
+                                                                    data-splitting="words" data-animate="active"> <span>
+                                                                        What I Do </span></h2>
+                                                                <div
+                                                                    class="m-subtitle splitting-text-anim-1 scroll-animate"
+                                                                    data-splitting="words" data-animate="active"> <span>
+                                                                        my <b>Services</b> </span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section
+                                        class="elementor-section elementor-inner-section elementor-element elementor-element-9fc095d v-line v-line-right elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                        data-id="9fc095d" data-element_type="section">
+                                        <div class="elementor-container elementor-column-gap-default">
+                                            <div
+                                                class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-c350580"
+                                                data-id="c350580" data-element_type="column">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                    <div
+                                                        class="elementor-element elementor-element-ddf4ec7 elementor-widget elementor-widget-portfolio-services"
+                                                        data-id="ddf4ec7" data-element_type="widget"
+                                                        data-widget_type="portfolio-services.default">
+                                                        <div class="elementor-widget-container">
+                                                            <div
+                                                                class="swiper-container js-services scrolla-element-anim-1 scroll-animate"
+                                                                data-animate="active">
+                                                                <div class="swiper-wrapper">
+                                                                    {% for service in services %}
+                                                                        <div class="swiper-slide">
+                                                                            <div class="services-item">
+                                                                                <div class="lui-subtitle">
+                                                                                    <span> {{ service.field }} </span>
+                                                                                </div>
+                                                                                <div class="icon"></div>
+                                                                                <h5 class="lui-title">
+                                                                                    <span> {{ service.title }} </span>
+                                                                                </h5>
+                                                                                <div class="lui-text">
+                                                                                    <div> {{ service.description }} </div>
+                                                                                </div>
+                                                                                <a href="#contact-section"
+                                                                                   class="lnk"> Contact </a>
+                                                                                <div class="image"
+                                                                                     style="background-image: url({% static 'images/assets/pat-2.png' %});">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    {% endfor %}
+                                                                </div>
+                                                                <div class="swiper-pagination"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="elementor-element elementor-element-72ce7e6 elementor-widget elementor-widget-portfolio-bgtitle"
+                                                        data-id="72ce7e6" data-element_type="widget"
+                                                        data-widget_type="portfolio-bgtitle.default">
+                                                        <div class="elementor-widget-container">
+                                                            <div class="lui-bgtitle"><span> Services </span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section
+                        class="elementor-section elementor-top-section elementor-element elementor-element-c5eed56 elementor-section-full_width lui-gradient-center elementor-section-height-default elementor-section-height-default"
+                        data-id="c5eed56" data-element_type="section" id="skills-section">
+                        <div class="elementor-container elementor-column-gap-no">
+                            <div
+                                class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b550ade"
+                                data-id="b550ade" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <section
+                                        class="elementor-section elementor-inner-section elementor-element elementor-element-5679044 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                        data-id="5679044" data-element_type="section">
+                                        <div class="elementor-container elementor-column-gap-default">
+                                            <div
+                                                class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-e1e8420"
+                                                data-id="e1e8420" data-element_type="column">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                    <div
+                                                        class="elementor-element elementor-element-1d04a55 elementor-widget elementor-widget-portfolio-section-heading"
+                                                        data-id="1d04a55" data-element_type="widget"
+                                                        data-widget_type="portfolio-section-heading.default">
+                                                        <div class="elementor-widget-container">
+                                                            <div class="m-titles">
+                                                                <h2 class="m-title splitting-text-anim-1 scroll-animate"
+                                                                    data-splitting="words" data-animate="active"> <span>
+                                                                        Professional Skills </span></h2>
+                                                                <div
+                                                                    class="m-subtitle splitting-text-anim-1 scroll-animate"
+                                                                    data-splitting="words" data-animate="active"> <span>
+                                                                        my <b>Talent</b> </span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section
+                                        class="elementor-section elementor-inner-section elementor-element elementor-element-6f48272 v-line v-line-left elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                        data-id="6f48272" data-element_type="section">
+                                        <div class="elementor-container elementor-column-gap-custom">
+                                            {% for column in skills %}
+
+                                                <div
+                                                    class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-2fe5eab"
+                                                    data-id="2fe5eab" data-element_type="column">
+                                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                                        <div
+                                                            class="elementor-element elementor-element-acf98dc elementor-widget elementor-widget-portfolio-skills"
+                                                            data-id="acf98dc" data-element_type="widget"
+                                                            data-widget_type="portfolio-skills.default">
+                                                            <div class="elementor-widget-container">
+                                                                <div class="skills-items">
+                                                                    {% for item in column %}
+                                                                        <div
+                                                                            class="skills-item scrolla-element-anim-1 scroll-animate"
+                                                                            data-animate="active">
+                                                                            <h6 class="name">
+                                                                                <span> {{ item.skill }} </span></h6>
+                                                                            <div class="text">
+                                                                                <div>
+                                                                                    <p>{{ item.description }}</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="dots">
+                                                                                <div class="dot"
+                                                                                     style="width: {{ item.level }}%;">
+                                                                                    <span></span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="value"
+                                                                                 style="display: none"><span
+                                                                                class="num">{{ item.level }}<span>%</span></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    {% endfor %}
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            {% endfor %}
+                                        </div>
+                                    </section>
+                                    <div
+                                        class="elementor-element elementor-element-64dfb76 elementor-widget elementor-widget-portfolio-bgtitle"
+                                        data-id="64dfb76" data-element_type="widget"
+                                        data-widget_type="portfolio-bgtitle.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="lui-bgtitle"><span> Skills </span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section
+                        class="elementor-section elementor-top-section elementor-element elementor-element-9448ad8 elementor-section-full_width lui-gradient-top elementor-section-height-default elementor-section-height-default"
+                        data-id="9448ad8" data-element_type="section" id="works-section">
+                        <div class="elementor-container elementor-column-gap-no">
+                            <div
+                                class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-50be8b3"
+                                data-id="50be8b3" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <section
+                                        class="elementor-section elementor-inner-section elementor-element elementor-element-66c2427 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                        data-id="66c2427" data-element_type="section">
+                                        <div class="elementor-container elementor-column-gap-default">
+                                            <div
+                                                class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-bc97f39"
+                                                data-id="bc97f39" data-element_type="column">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                    <div
+                                                        class="elementor-element elementor-element-d096b81 elementor-widget elementor-widget-portfolio-section-heading"
+                                                        data-id="d096b81" data-element_type="widget"
+                                                        data-widget_type="portfolio-section-heading.default">
+                                                        <div class="elementor-widget-container">
+                                                            <div class="m-titles">
+                                                                <h2 class="m-title splitting-text-anim-1 scroll-animate"
+                                                                    data-splitting="words" data-animate="active"> <span>
+                                                                        Portfolio </span></h2>
+                                                                <div
+                                                                    class="m-subtitle splitting-text-anim-1 scroll-animate"
+                                                                    data-splitting="words" data-animate="active"> <span>
+                                                                        my <b>Cases</b> </span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section
+                                        class="elementor-section elementor-inner-section elementor-element elementor-element-8894d20 v-line v-line-right elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                        data-id="8894d20" data-element_type="section">
+                                        <div class="elementor-container elementor-column-gap-default">
+                                            <div
+                                                class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-3695cd3"
+                                                data-id="3695cd3" data-element_type="column">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                    <div
+                                                        class="elementor-element elementor-element-2aacff2 elementor-widget elementor-widget-portfolio-portfolio-module"
+                                                        data-id="2aacff2" data-element_type="widget"
+                                                        data-widget_type="portfolio-portfolio-module.default">
+                                                        <div class="elementor-widget-container">
+                                                            <div class="works-box">
+                                                                <div
+                                                                    class="filter-links scrolla-element-anim-1 scroll-animate"
+                                                                    data-animate="active">
+                                                                    <a href="#" class="lui-subtitle active"
+                                                                       data-href=".works-col">All</a>
+                                                                    <a href="#" class="lui-subtitle"
+                                                                       data-href=".sorting-ui-ux">UI/UX</a>
+                                                                    <a href="#" class="lui-subtitle"
+                                                                       data-href=".sorting-ml">Machine Learning</a>
+                                                                    <a href="#" class="lui-subtitle"
+                                                                       data-href=".sorting-development">Development</a>
+                                                                    <a href="#" class="lui-subtitle"
+                                                                       data-href=".sorting-research">Research</a>
+                                                                </div>
+                                                                <div class="works-items works-masonry-items row">
+                                                                    {% for project in projects %}
+                                                                        <div
+                                                                            class="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 {{ project.sort_1 }} {{ project.sort_2 }} ">
+                                                                            <div
+                                                                                class="works-item scrolla-element-anim-1 scroll-animate"
+                                                                                data-animate="active">
+                                                                                <div class="image">
+                                                                                    <div class="img"><a
+                                                                                        href="/project/{{ project.id }}">
+                                                                                        <img decoding="async"
+                                                                                             src="{{ project.hero_image }}"
+                                                                                             alt="{{ project.title }}"/>
+                                                                                        <span
+                                                                                            class="overlay"></span> </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="desc"> <span
+                                                                                    class="category">{{ project.categories }}</span>
+                                                                                    <h5 class="name"><a
+                                                                                        href="/project/{{ project.id }}">{{ project.title }}</a>
+                                                                                    </h5>
+                                                                                    <div class="text">
+                                                                                        <p>{{ project.description_small }}</p>
+                                                                                    </div>
+                                                                                    <a
+                                                                                        href="/project/{{ project.id }}"
+                                                                                        class="lnk">See project</a>
+                                                                                </div>
+                                                                                <div class="bg-img"
+                                                                                     style="background-image: url({% static 'images/assets/pat-2.png' %});">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    {% endfor %}
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="elementor-element elementor-element-9c95224 elementor-widget elementor-widget-portfolio-bgtitle"
+                                                        data-id="9c95224" data-element_type="widget"
+                                                        data-widget_type="portfolio-bgtitle.default">
+                                                        <div class="elementor-widget-container">
+                                                            <div class="lui-bgtitle"><span> Portfolio </span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section
+                        class="elementor-section elementor-top-section elementor-element elementor-element-0812a25 elementor-section-full_width lui-gradient-bottom elementor-section-height-default elementor-section-height-default"
+                        data-id="0812a25" data-element_type="section" id="resume-section">
+                        <div class="elementor-container elementor-column-gap-no">
+                            <div
+                                class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e0cfaf1"
+                                data-id="e0cfaf1" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <section
+                                        class="elementor-section elementor-inner-section elementor-element elementor-element-097baec elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                        data-id="097baec" data-element_type="section">
+                                        <div class="elementor-container elementor-column-gap-default">
+                                            <div
+                                                class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-c2b1cc1"
+                                                data-id="c2b1cc1" data-element_type="column">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                    <div
+                                                        class="elementor-element elementor-element-1731d1b elementor-widget elementor-widget-portfolio-section-heading"
+                                                        data-id="1731d1b" data-element_type="widget"
+                                                        data-widget_type="portfolio-section-heading.default">
+                                                        <div class="elementor-widget-container">
+                                                            <div class="m-titles">
+                                                                <h2 class="m-title splitting-text-anim-1 scroll-animate"
+                                                                    data-splitting="words" data-animate="active"> <span>
+                                                                        Resume </span></h2>
+                                                                <div
+                                                                    class="m-subtitle splitting-text-anim-1 scroll-animate"
+                                                                    data-splitting="words" data-animate="active"> <span>
+                                                                        my <b>Story</b> </span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section
+                                        class="elementor-section elementor-inner-section elementor-element elementor-element-7994a41 v-line v-line-left elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                        data-id="7994a41" data-element_type="section">
+                                        <div class="elementor-container elementor-column-gap-custom">
+                                            <div
+                                                class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-9ef002f"
+                                                data-id="9ef002f" data-element_type="column">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                    <div
+                                                        class="elementor-element elementor-element-fddc017 elementor-widget elementor-widget-portfolio-history"
+                                                        data-id="fddc017" data-element_type="widget"
+                                                        data-widget_type="portfolio-history.default">
+                                                        <div class="elementor-widget-container">
+                                                            <h5 class="history-title scrolla-element-anim-1 scroll-animate"
+                                                                data-animate="active"><span> Education </span></h5>
+                                                            <div class="history-items">
+                                                                {% for edu in education %}
+                                                                    {% if edu.id == lenEducation %}
+                                                                        <div
+                                                                            class="history-item lui-collapse-item opened scrolla-element-anim-1 scroll-animate"
+                                                                            data-animate="active">
+                                                                            <h6 class="name lui-collapse-btn active">
+                                                                                <span> {{ edu.place }} </span>
+                                                                            </h6>
+                                                                            <div class="history-content">
+                                                                                <div class="subname">
+                                                                                    <span> {{ edu.title }} </span>
+                                                                                </div>
+                                                                                <div class="date lui-subtitle">
+                                                                                    <span> {{ edu.syear }} - {{ edu.eyear }} </span>
+                                                                                </div>
+                                                                                <div class="text">
+                                                                                    <div>
+                                                                                        <p> {{ edu.description }} </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    {% else %}
+                                                                        <div
+                                                                            class="history-item lui-collapse-item scrolla-element-anim-1 scroll-animate animate__active animate__animated"
+                                                                            data-animate="active">
+                                                                            <h6 class="name lui-collapse-btn">
+                                                                                <span> {{ edu.place }} </span>
+                                                                            </h6>
+                                                                            <div class="history-content">
+                                                                                <div class="subname">
+                                                                                    <span> {{ edu.title }} </span>
+                                                                                </div>
+                                                                                <div class="date lui-subtitle">
+                                                                                    <span> {{ edu.syear }} - {{ edu.eyear }} </span>
+                                                                                </div>
+                                                                                <div class="text">
+                                                                                    <div>
+                                                                                        <p> {{ edu.description }} </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    {% endif %}
+                                                                {% endfor %}
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-900c59c"
+                                                data-id="900c59c" data-element_type="column">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                    <div
+                                                        class="elementor-element elementor-element-d6ff03d elementor-widget elementor-widget-portfolio-history"
+                                                        data-id="d6ff03d" data-element_type="widget"
+                                                        data-widget_type="portfolio-history.default">
+                                                        <div class="elementor-widget-container">
+                                                            <h5 class="history-title scrolla-element-anim-1 scroll-animate"
+                                                                data-animate="active"><span> Experience </span></h5>
+                                                            <div class="history-items">
+                                                                {% for exp in experience %}
+                                                                    {% if exp.id == lenEducation %}
+                                                                        <div
+                                                                            class="history-item lui-collapse-item opened scrolla-element-anim-1 scroll-animate"
+                                                                            data-animate="active">
+                                                                            <h6 class="name lui-collapse-btn active">
+                                                                                <span> {{ exp.place }} </span>
+                                                                            </h6>
+                                                                            <div class="history-content">
+                                                                                <div class="subname">
+                                                                                    <span> {{ exp.title }} </span>
+                                                                                </div>
+                                                                                <div class="date lui-subtitle">
+                                                                                    {% if exp.eyear|to_str == "1980-01-01" %}
+                                                                                        <span> {{ exp.syear }} - Present </span>
+                                                                                    {% else %}
+                                                                                        <span> {{ exp.syear }} - {{ exp.eyear }} </span>
+                                                                                    {% endif %}
+                                                                                </div>
+                                                                                <div class="text">
+                                                                                    <div>
+                                                                                        <p> {{ exp.description }} </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    {% else %}
+                                                                        <div
+                                                                            class="history-item lui-collapse-item scrolla-element-anim-1 scroll-animate animate__active animate__animated"
+                                                                            data-animate="active">
+                                                                            <h6 class="name lui-collapse-btn">
+                                                                                <span> {{ exp.place }} </span>
+                                                                            </h6>
+                                                                            <div class="history-content">
+                                                                                <div class="subname">
+                                                                                    <span> {{ exp.title }} </span>
+                                                                                </div>
+                                                                                <div class="date lui-subtitle">
+                                                                                    {% if exp.eyear|to_str == "JAN. 1, 1980"|date:"M. j, Y" %}
+                                                                                        <span> {{ exp.syear }} - Present </span>
+                                                                                    {% else %}
+                                                                                        <span> {{ exp.syear }} - {{ exp.eyear }} </span>
+                                                                                    {% endif %}
+                                                                                </div>
+                                                                                <div class="text">
+                                                                                    <div>
+                                                                                        <p> {{ exp.description }} </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    {% endif %}
+                                                                {% endfor %}
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                    </section>
+                                    <div
+                                        class="elementor-element elementor-element-2fae71e elementor-widget elementor-widget-portfolio-bgtitle"
+                                        data-id="2fae71e" data-element_type="widget"
+                                        data-widget_type="portfolio-bgtitle.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="lui-bgtitle"><span> History </span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section
+                        class="elementor-section elementor-top-section elementor-element elementor-element-be88fe0 elementor-section-full_width lui-gradient-top elementor-section-height-default elementor-section-height-default"
+                        data-id="be88fe0" data-element_type="section" id="blog-section">
+                        <div class="elementor-container elementor-column-gap-no">
+                            <div
+                                class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-05e24a8"
+                                data-id="05e24a8" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <section
+                                        class="elementor-section elementor-inner-section elementor-element elementor-element-e17bf0b elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                        data-id="e17bf0b" data-element_type="section">
+                                        <div class="elementor-container elementor-column-gap-default">
+                                            <div
+                                                class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-b42cc8a"
+                                                data-id="b42cc8a" data-element_type="column">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                    <div
+                                                        class="elementor-element elementor-element-5bccf61 elementor-widget elementor-widget-portfolio-section-heading"
+                                                        data-id="5bccf61" data-element_type="widget"
+                                                        data-widget_type="portfolio-section-heading.default">
+                                                        <div class="elementor-widget-container">
+                                                            <div class="m-titles">
+                                                                <h2 class="m-title splitting-text-anim-1 scroll-animate"
+                                                                    data-splitting="words" data-animate="active"> <span>
+                                                                        Latest Blog </span></h2>
+                                                                <div
+                                                                    class="m-subtitle splitting-text-anim-1 scroll-animate"
+                                                                    data-splitting="words" data-animate="active"> <span>
+                                                                        my <b>Articles and Advice</b> </span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section
+                                        class="elementor-section elementor-inner-section elementor-element elementor-element-4785a55 v-line v-line-right elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                        data-id="4785a55" data-element_type="section">
+                                        <div class="elementor-container elementor-column-gap-default">
+                                            <div
+                                                class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-a13abf7"
+                                                data-id="a13abf7" data-element_type="column">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                    <div
+                                                        class="elementor-element elementor-element-a2f3a61 elementor-widget elementor-widget-portfolio-blog"
+                                                        data-id="a2f3a61" data-element_type="widget"
+                                                        data-widget_type="portfolio-blog.default">
+                                                        <div class="elementor-widget-container">
+                                                            <div class="blog-items row">
+                                                                {% for blog in blogs %}
+                                                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                                                        <div
+                                                                            class="archive-item scrolla-element-anim-1 scroll-animate"
+                                                                            data-animate="active">
+                                                                            <div
+                                                                                class="post type-post status-publish format-standard has-post-thumbnail hentry category-branding category-ui-design tag-branding tag-design tag-development tag-ui">
+                                                                                <div class="image"><a
+                                                                                    href="/blog/{{ blog.date | date:"Y" }}/{{ blog.date | date:"m" }}/{{ blog.date | date:"d" }}/{{ blog.slug }}">
+                                                                                    <img decoding="async"
+                                                                                         src="{{ blog.hero_image }}"
+                                                                                         alt="{{ blog.title }}"/>
+                                                                                </a></div>
+                                                                                <div class="desc">
+                                                                                    <div class="category lui-subtitle">
+                                                                                        <span>{{ blog.date }}</span>
+                                                                                    </div>
+                                                                                    <h5 class="lui-title"><a
+                                                                                        href="/blog/{{ blog.date | date:"Y" }}/{{ blog.date | date:"m" }}/{{ blog.date | date:"d" }}/{{ blog.slug }}">{{ blog.title }}</a>
+                                                                                    </h5>
+                                                                                    <div class="lui-text">
+                                                                                        <p>{{ blog.abstract }}</p>
+                                                                                        <div class="readmore"><a
+                                                                                            href="/blog/{{ blog.date | date:"Y" }}/{{ blog.date | date:"m" }}/{{ blog.date | date:"d" }}/{{ blog.slug }}"
+                                                                                            class="lnk">Read more</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                {% endfor %}
+                                                            </div>
+                                                            <div class="load-more"><a href="/blog"
+                                                                                      class="btn scrolla-element-anim-1 scroll-animate"
+                                                                                      data-animate="active"> <span>View Blog</span>
+                                                            </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <div
+                                        class="elementor-element elementor-element-e2e5a48 elementor-widget elementor-widget-portfolio-bgtitle"
+                                        data-id="e2e5a48" data-element_type="widget"
+                                        data-widget_type="portfolio-bgtitle.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="lui-bgtitle"><span> Blog </span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section
+                        class="elementor-section elementor-top-section elementor-element elementor-element-118ec8a elementor-section-full_width lui-gradient-bottom elementor-section-height-default elementor-section-height-default"
+                        data-id="118ec8a" data-element_type="section" id="contact-section">
+                        <div class="elementor-container elementor-column-gap-no">
+                            <div
+                                class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-506c0e9"
+                                data-id="506c0e9" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <section
+                                        class="elementor-section elementor-inner-section elementor-element elementor-element-233590c elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                        data-id="233590c" data-element_type="section">
+                                        <div class="elementor-container elementor-column-gap-default">
+                                            <div
+                                                class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-d5466f4"
+                                                data-id="d5466f4" data-element_type="column">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                    <div
+                                                        class="elementor-element elementor-element-b649168 elementor-widget elementor-widget-portfolio-section-heading"
+                                                        data-id="b649168" data-element_type="widget"
+                                                        data-widget_type="portfolio-section-heading.default">
+                                                        <div class="elementor-widget-container">
+                                                            <div class="m-titles">
+                                                                <h2 class="m-title splitting-text-anim-1 scroll-animate"
+                                                                    data-splitting="words" data-animate="active"> <span>
+                                                                        Contact Me </span></h2>
+                                                                <div
+                                                                    class="m-subtitle splitting-text-anim-1 scroll-animate"
+                                                                    data-splitting="words" data-animate="active"> <span>
+                                                                        Let’s <b>Talk About Ideas</b> </span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section
+                                        class="elementor-section elementor-inner-section elementor-element elementor-element-ab9ee99 v-line v-line-left elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                        data-id="ab9ee99" data-element_type="section">
+                                        <div class="elementor-container elementor-column-gap-default">
+                                            <div
+                                                class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-1bb439c"
+                                                data-id="1bb439c" data-element_type="column">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                    <div
+                                                        class="elementor-element elementor-element-1b8e289 elementor-widget elementor-widget-portfolio-about-numbers"
+                                                        data-id="1b8e289" data-element_type="widget"
+                                                        data-widget_type="portfolio-about-numbers.default">
+                                                        <div class="elementor-widget-container">
+                                                            <div class="numbers-items">
+                                                                <div
+                                                                    class="numbers-item scrolla-element-anim-1 scroll-animate"
+                                                                    data-animate="active">
+                                                                    <div class="icon"><i aria-hidden="true"
+                                                                                         class="far fa-map"></i></div>
+                                                                    <div class="title"><span> Address </span></div>
+                                                                    <div class="lui-text"> <span> West Delhi, India
+                                                                        </span></div>
+                                                                </div>
+                                                                <div
+                                                                    class="numbers-item scrolla-element-anim-1 scroll-animate"
+                                                                    data-animate="active">
+                                                                    <div class="icon"><i aria-hidden="true"
+                                                                                         class="far fa-user"></i></div>
+                                                                    <div class="title"><span> Freelance </span></div>
+                                                                    <div class="lui-text"> <span> Available Right Now
+                                                                        </span></div>
+                                                                </div>
+                                                                <div
+                                                                    class="numbers-item scrolla-element-anim-1 scroll-animate"
+                                                                    data-animate="active">
+                                                                    <div class="icon"><i aria-hidden="true"
+                                                                                         class="far fa-envelope"></i>
+                                                                    </div>
+                                                                    <div class="title"><span> Email </span></div>
+                                                                    <div class="lui-text"> <span>
+                                                                            ishubhamsingh2e@gmail.com </span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-c51b9f8"
+                                                data-id="c51b9f8" data-element_type="column">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                    <div
+                                                        class="elementor-element elementor-element-efa5300 elementor-widget elementor-widget-portfolio-cf7-form"
+                                                        data-id="efa5300" data-element_type="widget"
+                                                        data-widget_type="portfolio-cf7-form.default">
+                                                        <div class="elementor-widget-container">
+                                                            <div
+                                                                class="contacts-form scrolla-element-anim-1 scroll-animate"
+                                                                data-animate="active">
+                                                                <div class="bg-img"
+                                                                     style="background-image: url({% static 'images/assets/pat-1.png' %});">
+                                                                </div>
+                                                                <div role="form" class="wpcf7" id="wpcf7-f1087-p115-o1"
+                                                                     lang="en-US" dir="ltr">
+                                                                    <div class="screen-reader-response">
+                                                                        <p role="status" aria-live="polite"
+                                                                           aria-atomic="true"></p>
+                                                                        <ul></ul>
+                                                                    </div>
+                                                                    <form action="https://formspree.io/f/xknanwyd"
+                                                                          method="post"
+                                                                          class="wpcf7-form init"
+                                                                          novalidate="novalidate"
+                                                                          data-status="init">
+                                                                        <div class="row">
+                                                                            <div
+                                                                                class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                                                                <div class="group"><label>Your Full
+                                                                                    Name <b>*</b><span
+                                                                                        class="wpcf7-form-control-wrap"
+                                                                                        data-name="your-name"><input
+                                                                                        type="text"
+                                                                                        name="your-name"
+                                                                                        value="" size="40"
+                                                                                        class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                                                                        aria-required="true"
+                                                                                        aria-invalid="false"/></span></label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div
+                                                                                class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                                                                <div class="group"><label>Your Email
+                                                                                    Address <b>*</b><span
+                                                                                        class="wpcf7-form-control-wrap"
+                                                                                        data-name="your-email"><input
+                                                                                        type="email"
+                                                                                        name="your-email"
+                                                                                        value="" size="40"
+                                                                                        class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
+                                                                                        aria-required="true"
+                                                                                        aria-invalid="false"/></span></label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div
+                                                                                class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                                                <div class="group"><label>Your Subject
+                                                                                    <b>*</b><span
+                                                                                        class="wpcf7-form-control-wrap"
+                                                                                        data-name="your-subject"><input
+                                                                                        type="text"
+                                                                                        name="your-subject"
+                                                                                        value="" size="40"
+                                                                                        class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                                                                        aria-required="true"
+                                                                                        aria-invalid="false"/></span></label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div
+                                                                                class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                                                <div class="group"><label>Your Message
+                                                                                    <b>*</b><span
+                                                                                        class="wpcf7-form-control-wrap"
+                                                                                        data-name="your-message"><textarea
+                                                                                        name="your-message"
+                                                                                        cols="40" rows="10"
+                                                                                        class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required"
+                                                                                        aria-required="true"
+                                                                                        aria-invalid="false"></textarea></span></label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div
+                                                                                class="col-xs-12 col-sm-12 col-md-12 col-lg-12 align-right">
+                                                                                <button class="btn"
+                                                                                        type="submit"><span>Send
+                                                                                        Message</span></button>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="wpcf7-response-output"
+                                                                             aria-hidden="true"></div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <div
+                                        class="elementor-element elementor-element-c4eec92 elementor-widget elementor-widget-portfolio-bgtitle"
+                                        data-id="c4eec92" data-element_type="widget"
+                                        data-widget_type="portfolio-bgtitle.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="lui-bgtitle"><span> Contact Me </span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer__builder">
+                <div data-elementor-type="wp-post" data-elementor-id="148" class="elementor elementor-148">
+                    <section
+                        class="elementor-section elementor-top-section elementor-element elementor-element-2292e97 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                        data-id="2292e97" data-element_type="section">
+                        <div class="elementor-container elementor-column-gap-default">
+                            <div
+                                class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-1b638f0"
+                                data-id="1b638f0" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div
+                                        class="elementor-element elementor-element-2cc9b55 elementor-widget elementor-widget-portfolio-social-links"
+                                        data-id="2cc9b55" data-element_type="widget"
+                                        data-widget_type="portfolio-social-links.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="social-links scrolla-element-anim-1 scroll-animate"
+                                                 data-animate="active"><a target="_blank" rel="nofollow"
+                                                                          href="{{ admin_data.dev }}"> <i
+                                                aria-hidden="true"
+                                                class="fab fa-dev"></i>
+                                            </a> <a target="_blank" rel="nofollow" href="{{ admin_data.linkedin }}"> <i
+                                                aria-hidden="true" class="fab fa-linkedin-in"></i> </a> <a
+                                                target="_blank" rel="nofollow" href="{{ admin_data.github }}"> <i
+                                                aria-hidden="true" class="fab fa-github"></i> </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-1c9b303"
+                                data-id="1c9b303" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div
+                                        class="elementor-element elementor-element-c385779 elementor-widget elementor-widget-portfolio-copyright"
+                                        data-id="c385779" data-element_type="widget"
+                                        data-widget_type="portfolio-copyright.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="copyright-text scrolla-element-anim-1 scroll-animate"
+                                                 data-animate="active">
+                                                <div>
+                                                    <p>© 2022 <strong>Shubham</strong>. All rights reserved</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-2e4ce90"
+                                data-id="2e4ce90" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div
+                                        class="elementor-element elementor-element-8b314e8 elementor-widget elementor-widget-portfolio-copyright"
+                                        data-id="8b314e8" data-element_type="widget"
+                                        data-widget_type="portfolio-copyright.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="copyright-text scrolla-element-anim-1 scroll-animate"
+                                                 data-animate="active">
+                                                <div> Developed by <strong>Shubham Singh</strong></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cursor" style="transform: translate3d(1408px, 324px, 0px);"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"
+            integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"
+            integrity="sha512-3j3VU6WC5rPQB4Ld1jnLV7Kd5xr+cq9avvhwqzbH/taCRNURoeEpoPBK9pDyeukwSxwRPJ8fDgvYXd6SkaZ2TA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+            integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+            crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+
+    {% compress js %}
+        <script src="{% static 'javascript/services.js' %}"></script>
+        <script src="{% static 'javascript/renderer.js' %}"></script>
+        <script src="{% static 'javascript/tabs.js' %}"></script>
+        <script src="{% static 'javascript/swiper.js' %}"></script>
+        <script src="{% static 'javascript/webkitTransform.js' %}"></script>
+        <script src="{% static 'javascript/imageLoaded.js' %}"></script>
+        <script src="{% static 'javascript/loader.js' %}"></script>
+        <script src="{% static 'javascript/elementor.min.js' %}"></script>
+    {% endcompress %}
+
+    </body>
+
+{% endblock body %}

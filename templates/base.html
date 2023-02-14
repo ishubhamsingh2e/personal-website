@@ -1,0 +1,43 @@
+{% load static %}
+{% load compress %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="{% static 'images/pizza.ico' %}">
+
+    {% compress css %}
+        <link type="text/css" media="all" href="{% static 'css/elementorKit.css' %}" rel="stylesheet"/>
+        <link type="text/css" media="all" href="{% static 'css/section.css' %}" rel="stylesheet"/>
+        <link type="text/css" media="all" href="{% static 'css/navbar.css' %}" rel="stylesheet"/>
+        <link type="text/css" media="all" href="{% static 'css/footer.css' %}" rel="stylesheet"/>
+        <link type="text/css" media="all" href="{% static 'css/bootstrap.css' %}" rel="stylesheet"/>
+        <link type="text/css" media="all" href="{% static 'css/swiper.css' %}" rel="stylesheet"/>
+        <link type="text/css" media="all" href="{% static 'css/animate.css' %}" rel="stylesheet"/>
+        <link type="text/css" media="all" href="{% static 'css/dark-skin.css' %}" rel="stylesheet"/>
+        <link type="text/css" media="all" href="{% static 'css/index.css' %}" rel="stylesheet"/>
+        <link type="text/css" media="all" href="{% static 'css/elementor-icons.css' %}" rel="stylesheet"/>
+        <link type="text/css" media="all" href="{% static 'css/elementor.css' %}" rel="stylesheet"/>
+        <link rel="stylesheet" href="{% static 'css/global.css' %}">
+
+        <link rel='stylesheet' href="{% static 'css/font/jost.css' %}" type='text/css' media='all'/>
+        <link rel='stylesheet' id='google-fonts-1-css' href="{% static 'css/font/roboto.css' %}" type='text/css'
+              media='all'/>
+    {% endcompress %}
+
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    {% block head %}
+    {% endblock head %}
+</head>
+
+{% block body %}
+{% endblock %}
+
+</html>

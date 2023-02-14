@@ -1,0 +1,1037 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load compress %}
+
+{% block head %}
+
+    <title>Project | {{ project.title }}</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/project.css' %}">
+    <link rel="stylesheet" href="{% static 'css/structure.css' %}">
+{% endblock head %}
+
+{% block body %}
+    <div class="container-page">
+        <div class="preloader">
+            <div class="centrize full-width">
+                <div class="vertical-center">
+                    <div class="spinner-logo">
+                        <img
+                            src="{% static 'images/logo.png' %}"
+                            alt="logo"
+                        />
+                        <div class="spinner-dot"></div>
+                        <div class="spinner spinner-line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header class="header">
+            <div class="header__builder">
+                <div
+                    data-elementor-type="wp-post"
+                    data-elementor-id="91"
+                    class="elementor elementor-91"
+                >
+                    <section
+                        class="elementor-section elementor-top-section elementor-element elementor-element-852e3c9 elementor-section-content-middle elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                        data-id="852e3c9"
+                        data-element_type="section"
+                    >
+                        <div
+                            class="elementor-container elementor-column-gap-no"
+                        >
+                            <div
+                                class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-ab1238c"
+                                data-id="ab1238c"
+                                data-element_type="column"
+                            >
+                                <div
+                                    class="elementor-widget-wrap elementor-element-populated"
+                                >
+                                    <div
+                                        class="elementor-element elementor-element-6b2395b elementor-widget elementor-widget-image"
+                                        data-id="6b2395b"
+                                        data-element_type="widget"
+                                        data-widget_type="image.default"
+                                    >
+                                        <div
+                                            class="elementor-widget-container"
+                                        >
+                                            <a href="/">
+                                                <img
+                                                    decoding="async"
+                                                    width="228"
+                                                    height="38"
+                                                    src="{% static 'images/logo.png' %}"
+                                                    class="attachment-full size-full"
+                                                    alt=""
+                                                    loading="lazy"
+                                                />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-2c253e3"
+                                data-id="2c253e3"
+                                data-element_type="column"
+                            >
+                                <div
+                                    class="elementor-widget-wrap elementor-element-populated"
+                                >
+                                    <div
+                                        class="elementor-element elementor-element-c48ea9c elementor-widget elementor-widget-header-menu"
+                                        data-id="c48ea9c"
+                                        data-element_type="widget"
+                                        data-widget_type="header-menu.default"
+                                    >
+                                        <div
+                                            class="elementor-widget-container"
+                                        >
+                                            <a
+                                                href="#"
+                                                class="switcher-btn"
+                                            >
+													<span class="sw-before">
+														<svg
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            width="23"
+                                                            height="23"
+                                                            viewBox="0 0 23 23"
+                                                        >
+															<path
+                                                                id="Dark_Theme"
+                                                                fill="#000"
+                                                                d="M1759.46,111.076a0.819,0.819,0,0,0-.68.147,8.553,8.553,0,0,1-2.62,1.537,8.167,8.167,0,0,1-2.96.531,8.655,8.655,0,0,1-8.65-8.682,9.247,9.247,0,0,1,.47-2.864,8.038,8.038,0,0,1,1.42-2.54,0.764,0.764,0,0,0-.12-1.063,0.813,0.813,0,0,0-.68-0.148,11.856,11.856,0,0,0-6.23,4.193,11.724,11.724,0,0,0,1,15.387,11.63,11.63,0,0,0,19.55-5.553A0.707,0.707,0,0,0,1759.46,111.076Zm-4.5,6.172a10.137,10.137,0,0,1-14.29-14.145,10.245,10.245,0,0,1,3.38-2.836c-0.14.327-.29,0.651-0.41,1.006a9.908,9.908,0,0,0-.56,3.365,10.162,10.162,0,0,0,10.15,10.189,9.776,9.776,0,0,0,3.49-.62,11.659,11.659,0,0,0,1.12-.473A10.858,10.858,0,0,1,1754.96,117.248Z"
+                                                                transform="translate(-1737 -98)"></path>
+														</svg>
+													</span>
+                                                <span class="sw-after">
+														<svg
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            width="22.22"
+                                                            height="22.313"
+                                                            viewBox="0 0 22.22 22.313"
+                                                        >
+															<path
+                                                                id="Light_Theme"
+                                                                fill="#fff"
+                                                                d="M1752.49,105.511a5.589,5.589,0,0,0-3.94-1.655,5.466,5.466,0,0,0-3.94,1.655,5.61,5.61,0,0,0,3.94,9.566,5.473,5.473,0,0,0,3.94-1.653,5.643,5.643,0,0,0,1.65-3.957A5.516,5.516,0,0,0,1752.49,105.511Zm-1.06,6.85a4.1,4.1,0,0,1-5.76,0,4.164,4.164,0,0,1,0-5.788A4.083,4.083,0,0,1,1751.43,112.361Zm7.47-3.662h-2.27a0.768,0.768,0,0,0,0,1.536h2.27A0.768,0.768,0,0,0,1758.9,108.7Zm-10.35,8.12a0.777,0.777,0,0,0-.76.769v2.274a0.777,0.777,0,0,0,.76.767,0.786,0.786,0,0,0,.77-0.767v-2.274A0.786,0.786,0,0,0,1748.55,116.819Zm7.85-.531-1.62-1.624a0.745,0.745,0,0,0-1.06,0,0.758,0.758,0,0,0,0,1.063l1.62,1.625a0.747,0.747,0,0,0,1.06,0A0.759,0.759,0,0,0,1756.4,116.288ZM1748.55,98.3a0.777,0.777,0,0,0-.76.768v2.273a0.778,0.778,0,0,0,.76.768,0.787,0.787,0,0,0,.77-0.768V99.073A0.786,0.786,0,0,0,1748.55,98.3Zm7.88,3.278a0.744,0.744,0,0,0-1.06,0l-1.62,1.624a0.758,0.758,0,0,0,0,1.063,0.745,0.745,0,0,0,1.06,0l1.62-1.624A0.758,0.758,0,0,0,1756.43,101.583Zm-15.96,7.116h-2.26a0.78,0.78,0,0,0-.77.768,0.76,0.76,0,0,0,.77.768h2.26A0.768,0.768,0,0,0,1740.47,108.7Zm2.88,5.965a0.745,0.745,0,0,0-1.06,0l-1.62,1.624a0.759,0.759,0,0,0,0,1.064,0.747,0.747,0,0,0,1.06,0l1.62-1.625A0.758,0.758,0,0,0,1743.35,114.664Zm0-11.457-1.62-1.624a0.744,0.744,0,0,0-1.06,0,0.758,0.758,0,0,0,0,1.063l1.62,1.624a0.745,0.745,0,0,0,1.06,0A0.758,0.758,0,0,0,1743.35,103.207Z"
+                                                                transform="translate(-1737.44 -98.313)"></path>
+														</svg>
+													</span>
+                                            </a>
+                                            <a href="#" class="menu-btn"
+                                            ><span></span><span></span
+                                            ></a>
+                                            <div class="menu-full-overlay">
+                                                <div class="menu-full-container">
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                                <div class="menu-full">
+                                                                    <ul id="menu-main-menu" class="menu-full">
+                                                                        <li id="menu-item-606"
+                                                                            class=" menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item ">
+                                                                            <a class=" splitting-text-anim-2"
+                                                                               data-splitting="chars" href="/">Home</a>
+                                                                        </li>
+                                                                        <li id="menu-item-1936"
+                                                                            class=" menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item ">
+                                                                            <a class=" splitting-text-anim-2"
+                                                                               data-splitting="chars"
+                                                                               href="/#services-section">Services</a>
+                                                                        </li>
+                                                                        <li id="menu-item-1938"
+                                                                            class=" menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item ">
+                                                                            <a class=" splitting-text-anim-2"
+                                                                               data-splitting="chars"
+                                                                               href="/#skills-section">Skills</a>
+                                                                        </li>
+                                                                        <li id="menu-item-608"
+                                                                            class=" menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item ">
+                                                                            <a class=" splitting-text-anim-2"
+                                                                               data-splitting="chars"
+                                                                               href="/#works-section">Works</a>
+                                                                        </li>
+                                                                        <li id="menu-item-607"
+                                                                            class=" menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item ">
+                                                                            <a class=" splitting-text-anim-2"
+                                                                               data-splitting="chars"
+                                                                               href="/#resume-section">Resume</a>
+                                                                        </li>
+                                                                        <li id="menu-item-610"
+                                                                            class=" menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item ">
+                                                                            <a class=" splitting-text-anim-2"
+                                                                               data-splitting="chars"
+                                                                               href="/#blog-section">Blog</a>
+                                                                        </li>
+                                                                        <li id="menu-item-611"
+                                                                            class=" menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item ">
+                                                                            <a class=" splitting-text-anim-2"
+                                                                               data-splitting="chars"
+                                                                               href="/#contact-section">Contact</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="menu-social-links"><a
+                                                                    href="{{ admin_data.linkedin }}" target="blank"
+                                                                    class="scrolla-element-anim-1" title="linkedin">
+                                                                    <i class="fa-brands fa-linkedin-in"></i> </a> <a
+                                                                    href="{{ admin_data.dev }}" target="blank"
+                                                                    class="scrolla-element-anim-1" title="dev">
+                                                                    <i class="fab fa-dev"></i> </a> <a
+                                                                    href="{{ admin_data.github }}" target="blank"
+                                                                    class="scrolla-element-anim-1" title="github">
+                                                                    <i class="fab fa-github"></i> </a></div>
+                                                                <div class="v-line-block"><span></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="menu-overlay"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </header>
+        <div class="wrapper">
+            <div
+                id="post-268"
+                class="post-268 portfolio type-portfolio status-publish has-post-thumbnail hentry portfolio_categories-branding portfolio_categories-photo"
+            >
+                <section class="project-single">
+                    <div
+                        data-elementor-type="wp-post"
+                        data-elementor-id="268"
+                        class="elementor elementor-268"
+                    >
+                        <section
+                            class="elementor-section elementor-top-section elementor-element elementor-element-4496479 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                            data-id="4496479"
+                            data-element_type="section"
+                        >
+                            <div
+                                class="elementor-container elementor-column-gap-no"
+                            >
+                                <div
+                                    class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8f84224"
+                                    data-id="8f84224"
+                                    data-element_type="column"
+                                >
+                                    <div
+                                        class="elementor-widget-wrap elementor-element-populated"
+                                    >
+                                        <section
+                                            class="elementor-section elementor-inner-section elementor-element elementor-element-53b37b3 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                            data-id="53b37b3"
+                                            data-element_type="section"
+                                        >
+                                            <div
+                                                class="elementor-container elementor-column-gap-default"
+                                            >
+                                                <div
+                                                    class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-c1a8d23"
+                                                    data-id="c1a8d23"
+                                                    data-element_type="column"
+                                                >
+                                                    <div
+                                                        class="elementor-widget-wrap elementor-element-populated"
+                                                    >
+                                                        <div
+                                                            class="elementor-element elementor-element-5624e98 elementor-widget elementor-widget-portfolio-section-heading"
+                                                            data-id="5624e98"
+                                                            data-element_type="widget"
+                                                            data-widget_type="portfolio-section-heading.default"
+                                                        >
+                                                            <div
+                                                                class="elementor-widget-container"
+                                                            >
+                                                                <div
+                                                                    class="m-titles"
+                                                                >
+                                                                    <h2
+                                                                        class="m-title splitting-text-anim-1 scroll-animate"
+                                                                        data-splitting="words"
+                                                                        data-animate="active"
+                                                                    >
+																			<span>
+																				{{ project.title }}
+																			</span>
+                                                                    </h2>
+                                                                    <div
+                                                                        class="m-subtitle splitting-text-anim-1 scroll-animate"
+                                                                        data-splitting="words"
+                                                                        data-animate="active"
+                                                                    >
+																			<span>
+																				{{ project.categories }}
+																			</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section
+                            class="elementor-section elementor-top-section elementor-element elementor-element-789b422 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                            data-id="789b422"
+                            data-element_type="section"
+                        >
+                            <div
+                                class="elementor-container elementor-column-gap-no"
+                            >
+                                <div
+                                    class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-be06128"
+                                    data-id="be06128"
+                                    data-element_type="column"
+                                >
+                                    <div
+                                        class="elementor-widget-wrap elementor-element-populated"
+                                    >
+                                        <section
+                                            class="elementor-section elementor-inner-section elementor-element elementor-element-7c9ccf7 v-line v-line-right v-line-top elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                            data-id="7c9ccf7"
+                                            data-element_type="section"
+                                        >
+                                            <div
+                                                class="elementor-container elementor-column-gap-custom"
+                                            >
+                                                <div
+                                                    class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-54ed9d2"
+                                                    data-id="54ed9d2"
+                                                    data-element_type="column"
+                                                >
+                                                    <div
+                                                        class="elementor-widget-wrap elementor-element-populated"
+                                                    >
+                                                        <div
+                                                            class="elementor-element elementor-element-f29735b elementor-widget elementor-widget-portfolio-project-details"
+                                                            data-id="f29735b"
+                                                            data-element_type="widget"
+                                                            data-widget_type="portfolio-project-details.default"
+                                                        >
+                                                            <div
+                                                                class="elementor-widget-container"
+                                                            >
+                                                                <div
+                                                                    class="m-details"
+                                                                >
+                                                                    <div
+                                                                        class="details-label"
+                                                                    >
+																			<span>
+																				Date:
+																			</span>
+                                                                        <strong
+                                                                        ><span>
+																					{{ project.time }}
+																				</span></strong
+                                                                        >
+                                                                    </div>
+                                                                    <div
+                                                                        class="details-label"
+                                                                    >
+																			<span>
+																				Technology:
+																			</span>
+                                                                        <strong
+                                                                        ><span>
+																					{{ project.technology }}
+																				</span></strong
+                                                                        >
+                                                                    </div>
+                                                                    <div
+                                                                        class="details-label"
+                                                                    >
+																			<span>
+																				Categories:
+																			</span>
+                                                                        <strong
+                                                                        ><span>
+																					{{ project.categories }}
+																				</span></strong
+                                                                        >
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-09ea295 align-right"
+                                                    data-id="09ea295"
+                                                    data-element_type="column"
+                                                >
+                                                    <div
+                                                        class="elementor-widget-wrap elementor-element-populated"
+                                                    >
+                                                        <div
+                                                            class="elementor-element elementor-element-82c190f elementor-widget elementor-widget-portfolio-description"
+                                                            data-id="82c190f"
+                                                            data-element_type="widget"
+                                                            data-widget_type="portfolio-description.default"
+                                                        >
+                                                            <div
+                                                                class="elementor-widget-container"
+                                                            >
+                                                                <a
+                                                                    target="_blank"
+                                                                    href="{{ project.project_url }}"
+                                                                    class="btn scrolla-element-anim-1 scroll-animate"
+                                                                    data-animate="active"
+                                                                >
+																		<span
+                                                                        >Project</span
+                                                                        >
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section
+                            class="elementor-section elementor-top-section elementor-element elementor-element-e406223 elementor-section-full_width section-bg elementor-section-height-default elementor-section-height-default"
+                            data-id="e406223"
+                            data-element_type="section"
+                        >
+                            <div
+                                class="elementor-container elementor-column-gap-no"
+                            >
+                                <div
+                                    class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3926572"
+                                    data-id="3926572"
+                                    data-element_type="column"
+                                >
+                                    <div
+                                        class="elementor-widget-wrap elementor-element-populated"
+                                    >
+                                        <div
+                                            class="elementor-element elementor-element-1d0ed58 elementor-widget elementor-widget-portfolio-large-image"
+                                            data-id="1d0ed58"
+                                            data-element_type="widget"
+                                            data-widget_type="portfolio-large-image.default"
+                                        >
+                                            <div
+                                                class="elementor-widget-container"
+                                            >
+                                                <div class="m-image-large">
+                                                    <div class="image">
+                                                        <div
+                                                            class="img js-parallax"
+                                                            style="
+                                                                background-image: url({{ project.hero_image }});
+                                                                "
+                                                        ></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section
+                            class="elementor-section elementor-top-section elementor-element elementor-element-5968938 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                            data-id="5968938"
+                            data-element_type="section"
+                        >
+                            <div
+                                class="elementor-container elementor-column-gap-no"
+                            >
+                                <div
+                                    class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1b07dab"
+                                    data-id="1b07dab"
+                                    data-element_type="column"
+                                >
+                                    <div
+                                        class="elementor-widget-wrap elementor-element-populated"
+                                    >
+                                        <section
+                                            class="elementor-section elementor-inner-section elementor-element elementor-element-75dc346 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                            data-id="75dc346"
+                                            data-element_type="section"
+                                        >
+                                            <div
+                                                class="elementor-container elementor-column-gap-custom"
+                                            >
+                                                <div
+                                                    class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-f4e9eb3"
+                                                    data-id="f4e9eb3"
+                                                    data-element_type="column"
+                                                >
+                                                    <div
+                                                        class="elementor-widget-wrap elementor-element-populated"
+                                                    >
+                                                        <div
+                                                            class="elementor-element elementor-element-289f735 elementor-widget elementor-widget-heading"
+                                                            data-id="289f735"
+                                                            data-element_type="widget"
+                                                            data-widget_type="heading.default"
+                                                        >
+                                                            <div
+                                                                class="elementor-widget-container"
+                                                            >
+                                                                <h4
+                                                                    class="elementor-heading-title elementor-size-default"
+                                                                >
+                                                                    Description
+                                                                </h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <section
+                                            class="elementor-section elementor-inner-section elementor-element elementor-element-14be939 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                            data-id="14be939"
+                                            data-element_type="section"
+                                        >
+                                            <div
+                                                class="elementor-container elementor-column-gap-custom"
+                                            >
+                                                <div
+                                                    class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-3826100"
+                                                    data-id="3826100"
+                                                    data-element_type="column"
+                                                >
+                                                    <div
+                                                        class="elementor-widget-wrap elementor-element-populated"
+                                                    >
+                                                        <div
+                                                            class="elementor-element elementor-element-360a6a3 elementor-widget elementor-widget-text-editor"
+                                                            data-id="360a6a3"
+                                                            data-element_type="widget"
+                                                            data-widget_type="text-editor.default"
+                                                        >
+                                                            <div
+                                                                class="elementor-widget-container"
+                                                            >
+                                                                <p>{{ project.description_left }}</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-7401a8f"
+                                                    data-id="7401a8f"
+                                                    data-element_type="column"
+                                                >
+                                                    <div
+                                                        class="elementor-widget-wrap elementor-element-populated"
+                                                    >
+                                                        <div
+                                                            class="elementor-element elementor-element-0e69ca9 elementor-widget elementor-widget-text-editor"
+                                                            data-id="0e69ca9"
+                                                            data-element_type="widget"
+                                                            data-widget_type="text-editor.default"
+                                                        >
+                                                            <div
+                                                                class="elementor-widget-container"
+                                                            >
+                                                                <p>{{ project.description_right }}</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section
+                            class="elementor-section elementor-top-section elementor-element elementor-element-af5b2fe elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                            data-id="af5b2fe"
+                            data-element_type="section"
+                        >
+                            <div
+                                class="elementor-container elementor-column-gap-no"
+                            >
+                                <div
+                                    class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ec0cbe2"
+                                    data-id="ec0cbe2"
+                                    data-element_type="column"
+                                >
+                                    <div
+                                        class="elementor-widget-wrap elementor-element-populated"
+                                    >
+                                        <section
+                                            class="elementor-section elementor-inner-section elementor-element elementor-element-0799568 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                            data-id="0799568"
+                                            data-element_type="section"
+                                        >
+                                            <div
+                                                class="elementor-container elementor-column-gap-default"
+                                            >
+                                                <div
+                                                    class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-d7abea7"
+                                                    data-id="d7abea7"
+                                                    data-element_type="column"
+                                                >
+                                                    <div
+                                                        class="elementor-widget-wrap elementor-element-populated"
+                                                    >
+                                                        <div
+                                                            class="elementor-element elementor-element-57308f0 elementor-widget elementor-widget-portfolio-projects-gallery-grid"
+                                                            data-id="57308f0"
+                                                            data-element_type="widget"
+                                                            data-widget_type="portfolio-projects-gallery-grid.default"
+                                                        >
+                                                            <div
+                                                                class="elementor-widget-container"
+                                                            >
+                                                                <div
+                                                                    class="m-gallery"
+                                                                >
+                                                                    <div
+                                                                        class="row"
+                                                                    >
+                                                                        <div
+                                                                            class="col-xs-12 col-sm-6 col-md-6 col-lg-6"
+                                                                        >
+                                                                            <div
+                                                                                class="works-item"
+                                                                            >
+                                                                                <div
+                                                                                    class="image scrolla-element-anim-1 scroll-animate"
+                                                                                    data-animate="active"
+                                                                                >
+                                                                                    <div
+                                                                                        class="img"
+                                                                                    >
+                                                                                        <a
+                                                                                            href="{{ project.portrait }}"
+                                                                                            class="has-popup-image"
+                                                                                        ><img
+                                                                                            decoding="async"
+                                                                                            src="{{ project.portrait }}"
+                                                                                            alt="Item 1"
+                                                                                        /></a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-xs-12 col-sm-6 col-md-6 col-lg-6"
+                                                                        >
+                                                                            <div
+                                                                                class="works-item"
+                                                                            >
+                                                                                <div
+                                                                                    class="image scrolla-element-anim-1 scroll-animate"
+                                                                                    data-animate="active"
+                                                                                >
+                                                                                    <div
+                                                                                        class="img"
+                                                                                    >
+                                                                                        <a
+                                                                                            href="{{ project.landscape_top }}"
+                                                                                            class="has-popup-image"
+                                                                                        ><img
+                                                                                            decoding="async"
+                                                                                            src="{{ project.landscape_top }}"
+                                                                                            alt="Item 2"
+                                                                                        /></a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-xs-12 col-sm-6 col-md-6 col-lg-6"
+                                                                        >
+                                                                            <div
+                                                                                class="works-item"
+                                                                            >
+                                                                                <div
+                                                                                    class="image scrolla-element-anim-1 scroll-animate"
+                                                                                    data-animate="active"
+                                                                                >
+                                                                                    <div
+                                                                                        class="img"
+                                                                                    >
+                                                                                        <a
+                                                                                            href="{{ project.landscape_bottom }}"
+                                                                                            class="has-popup-image"
+                                                                                        ><img
+                                                                                            decoding="async"
+                                                                                            src="{{ project.landscape_bottom }}"
+                                                                                            alt="Item 3"
+                                                                                        /></a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section
+                            class="elementor-section elementor-top-section elementor-element elementor-element-d8ecdd7 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                            data-id="d8ecdd7"
+                            data-element_type="section"
+                        >
+                            <div
+                                class="elementor-container elementor-column-gap-no"
+                            >
+                                <div
+                                    class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-cbe2038"
+                                    data-id="cbe2038"
+                                    data-element_type="column"
+                                >
+                                    <div
+                                        class="elementor-widget-wrap elementor-element-populated"
+                                    >
+                                        <section
+                                            class="elementor-section elementor-inner-section elementor-element elementor-element-84d07b2 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                            data-id="84d07b2"
+                                            data-element_type="section"
+                                        >
+                                            <div
+                                                class="elementor-container elementor-column-gap-custom"
+                                            >
+                                                <div
+                                                    class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-4285601"
+                                                    data-id="4285601"
+                                                    data-element_type="column"
+                                                >
+                                                    <div
+                                                        class="elementor-widget-wrap elementor-element-populated"
+                                                    >
+                                                        <div
+                                                            class="elementor-element elementor-element-a93904d elementor-widget elementor-widget-heading"
+                                                            data-id="a93904d"
+                                                            data-element_type="widget"
+                                                            data-widget_type="heading.default"
+                                                        >
+                                                            <div
+                                                                class="elementor-widget-container"
+                                                            >
+                                                                <h4
+                                                                    class="elementor-heading-title elementor-size-default"
+                                                                >
+                                                                    Conclusion
+                                                                </h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <section
+                                            class="elementor-section elementor-inner-section elementor-element elementor-element-e890be0 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                            data-id="e890be0"
+                                            data-element_type="section"
+                                        >
+                                            <div
+                                                class="elementor-container elementor-column-gap-custom"
+                                            >
+                                                <div
+                                                    class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-8435d38"
+                                                    data-id="8435d38"
+                                                    data-element_type="column"
+                                                >
+                                                    <div
+                                                        class="elementor-widget-wrap elementor-element-populated"
+                                                    >
+                                                        <div
+                                                            class="elementor-element elementor-element-362238b elementor-widget elementor-widget-text-editor"
+                                                            data-id="362238b"
+                                                            data-element_type="widget"
+                                                            data-widget_type="text-editor.default"
+                                                        >
+                                                            <div
+                                                                class="elementor-widget-container"
+                                                            >
+                                                                <p>{{ project.conclusion_left }}</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-52c391c"
+                                                    data-id="52c391c"
+                                                    data-element_type="column"
+                                                >
+                                                    <div
+                                                        class="elementor-widget-wrap elementor-element-populated"
+                                                    >
+                                                        <div
+                                                            class="elementor-element elementor-element-b2eb6da elementor-widget elementor-widget-text-editor"
+                                                            data-id="b2eb6da"
+                                                            data-element_type="widget"
+                                                            data-widget_type="text-editor.default"
+                                                        >
+                                                            <div
+                                                                class="elementor-widget-container"
+                                                            >
+                                                                <p>{{ project.conclusion_right }}</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section
+                            class="elementor-section elementor-top-section elementor-element elementor-element-6e03c98 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                            data-id="6e03c98"
+                            data-element_type="section"
+                        >
+                            <div
+                                class="elementor-container elementor-column-gap-no"
+                            >
+                                <div
+                                    class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8fce93f"
+                                    data-id="8fce93f"
+                                    data-element_type="column"
+                                >
+                                    <div
+                                        class="elementor-widget-wrap elementor-element-populated"
+                                    >
+                                        <div
+                                            class="elementor-element elementor-element-7d0e873 elementor-widget elementor-widget-portfolio-section-video"
+                                            data-id="7d0e873"
+                                            data-element_type="widget"
+                                            data-widget_type="portfolio-section-video.default"
+                                        >
+                                            <div
+                                                class="elementor-widget-container"
+                                            >
+                                                <div class="m-video-large">
+                                                    <div class="video">
+                                                        <div
+                                                            class="img js-parallax"
+                                                            style="
+                                                                background-image: url({{ project.hero_image }});
+                                                                "
+                                                        ></div>
+                                                        <iframe
+                                                            class="js-video-iframe"
+                                                            data-src="{{ project.video }}"
+                                                        ></iframe>
+                                                        <div
+                                                            class="play"
+                                                        ></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section
+                            class="elementor-section elementor-top-section elementor-element elementor-element-102a68c elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                            data-id="102a68c"
+                            data-element_type="section"
+                        >
+                            <div
+                                class="elementor-container elementor-column-gap-custom"
+                            >
+                                <div
+                                    class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-bf971c6"
+                                    data-id="bf971c6"
+                                    data-element_type="column"
+                                >
+                                    <div
+                                        class="elementor-widget-wrap elementor-element-populated"
+                                    >
+                                        <div
+                                            class="elementor-element elementor-element-70dc9bb elementor-widget elementor-widget-portfolio-project-nav-links"
+                                            data-id="70dc9bb"
+                                            data-element_type="widget"
+                                            data-widget_type="portfolio-project-nav-links.default"
+                                        >
+                                            <div
+                                                class="elementor-widget-container"
+                                            >
+                                                <div
+                                                    class="m-page-navigation"
+                                                >
+                                                    {% if next_project == "None" %}
+                                                        <div class="row">
+                                                            <div
+                                                                class="col-xs-12 col-sm-12 col-md-12 col-lg-12"
+                                                            >
+                                                                <div
+                                                                    class="h-titles h-navs"
+                                                                >
+                                                                    <a href="/project/{{ project.next_id }}">
+																		<span
+                                                                            class="nav-arrow scrolla-element-anim-1 scroll-animate"
+                                                                            data-animate="active"
+                                                                        >
+																			<span>
+																				Next
+																				Project
+																			</span>
+																		</span>
+                                                                        <span
+                                                                            class="h-title splitting-text-anim-2 scroll-animate"
+                                                                            data-splitting="chars"
+                                                                            data-animate="active"
+                                                                        >
+																			<span>{{ project.next_name }}</span>
+																		</span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    {% endif %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer__builder">
+                <div data-elementor-type="wp-post" data-elementor-id="148" class="elementor elementor-148">
+                    <section
+                        class="elementor-section elementor-top-section elementor-element elementor-element-2292e97 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                        data-id="2292e97" data-element_type="section">
+                        <div class="elementor-container elementor-column-gap-default">
+                            <div
+                                class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-1b638f0"
+                                data-id="1b638f0" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div
+                                        class="elementor-element elementor-element-2cc9b55 elementor-widget elementor-widget-portfolio-social-links"
+                                        data-id="2cc9b55" data-element_type="widget"
+                                        data-widget_type="portfolio-social-links.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="social-links scrolla-element-anim-1 scroll-animate"
+                                                 data-animate="active"><a target="_blank" rel="nofollow"
+                                                                          href="{{ admin_data.dev }}"> <i
+                                                aria-hidden="true"
+                                                class="fab fa-dev"></i>
+                                            </a> <a target="_blank" rel="nofollow" href="{{ admin_data.linkedin }}"> <i
+                                                aria-hidden="true" class="fab fa-linkedin-in"></i> </a> <a
+                                                target="_blank" rel="nofollow" href="{{ admin_data.github }}"> <i
+                                                aria-hidden="true" class="fab fa-github"></i> </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-1c9b303"
+                                data-id="1c9b303" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div
+                                        class="elementor-element elementor-element-c385779 elementor-widget elementor-widget-portfolio-copyright"
+                                        data-id="c385779" data-element_type="widget"
+                                        data-widget_type="portfolio-copyright.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="copyright-text scrolla-element-anim-1 scroll-animate"
+                                                 data-animate="active">
+                                                <div>
+                                                    <p>© 2022 <strong>Shubham</strong>. All rights reserved</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-2e4ce90"
+                                data-id="2e4ce90" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div
+                                        class="elementor-element elementor-element-8b314e8 elementor-widget elementor-widget-portfolio-copyright"
+                                        data-id="8b314e8" data-element_type="widget"
+                                        data-widget_type="portfolio-copyright.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="copyright-text scrolla-element-anim-1 scroll-animate"
+                                                 data-animate="active">
+                                                <div> Developed by <strong>Shubham Singh</strong></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cursor"></div>
+    <div class="bsl-popup" data-theme="portfolio" data-category="wordpress">
+        <div class="bsl-popup__buttons"></div>
+        <div class="bsl-popup__content bsl-popup__content-related">
+            <div class="bsl-popup__menu"></div>
+            <div class="bsl-popup__tabs">
+                <div class="bsl-popup__tab bsl-popup__tab-demo"></div>
+                <div class="bsl-popup__tab bsl-popup__tab-all"></div>
+                <div class="bsl-popup__tab bsl-popup__tab-related"></div>
+            </div>
+        </div>
+        <div class="bsl-popup__content bsl-popup__content-help"></div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"
+            integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"
+            integrity="sha512-3j3VU6WC5rPQB4Ld1jnLV7Kd5xr+cq9avvhwqzbH/taCRNURoeEpoPBK9pDyeukwSxwRPJ8fDgvYXd6SkaZ2TA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+            integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+            crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+
+    {% compress js %}
+        <script src="{% static 'javascript/services.js' %}"></script>
+        <script src="{% static 'javascript/renderer.js' %}"></script>
+        <script src="{% static 'javascript/tabs.js' %}"></script>
+        <script src="{% static 'javascript/swiper.js' %}"></script>
+        <script src="{% static 'javascript/webkitTransform.js' %}"></script>
+        <script src="{% static 'javascript/imageLoaded.js' %}"></script>
+        <script src="{% static 'javascript/loader.js' %}"></script>
+        <script src="{% static 'javascript/elementor.min.js' %}"></script>
+    {% endcompress %}
+
+{% endblock body %}

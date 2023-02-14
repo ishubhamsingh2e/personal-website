@@ -1,0 +1,390 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load compress %}
+
+{% block head %}
+    <title>Article</title>
+    <link type="text/css" media="all" href="{% static 'css/markdown.css' %}" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+          integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
+            integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4"
+            crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+            integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+            onload="renderMathInElement(document.body);"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css"
+          integrity="sha512-WEQNv9d3+sqyHjrqUZobDhFARZDko2wpWdfcpv44lsypsSuMO0kHGd3MQ8rrsBn/Qa39VojphdU6CMkpJUmDVw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"
+            integrity="sha512-C1zvdb9R55RAkl6xCLTPt+Wmcz6s+ccOvcr6G57lbm8M2fbgn2SUjUJbQ13fEyjuLViwe97uJvwa1EUf4F1Akw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.22.0/themes/prism.css">
+
+{% endblock head %}
+
+{% block body %}
+    <body
+        class="post-template-default single single-post postid-532 single-format-standard light-skin elementor-default elementor-kit-7">
+    <div class="container-page">
+        <div class="preloader">
+            <div class="centrize full-width">
+                <div class="vertical-center">
+                    <div class="spinner-logo"><img src="{% static 'images/logo.png' %}"
+                                                   alt="portfolio &#8211; Resume &amp; Personal Portfolio WordPress Theme"/>
+                        <div class="spinner-dot"></div>
+                        <div class="spinner spinner-line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header class="header">
+            <div class="header__builder">
+                <div data-elementor-type="wp-post" data-elementor-id="91" class="elementor elementor-91">
+                    <section
+                        class="elementor-section elementor-top-section elementor-element elementor-element-852e3c9 elementor-section-content-middle elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                        data-id="852e3c9" data-element_type="section">
+                        <div class="elementor-container elementor-column-gap-no">
+                            <div
+                                class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-ab1238c"
+                                data-id="ab1238c" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div
+                                        class="elementor-element elementor-element-6b2395b elementor-widget elementor-widget-image"
+                                        data-id="6b2395b" data-element_type="widget" data-widget_type="image.default">
+                                        <div class="elementor-widget-container"><a href="/"> <img
+                                            decoding="async" width="228" height="38"
+                                            src="{% static 'images/logo.png' %}"
+                                            class="attachment-full size-full" alt="" loading="lazy"/> </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-2c253e3"
+                                data-id="2c253e3" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div
+                                        class="elementor-element elementor-element-c48ea9c elementor-widget elementor-widget-header-menu"
+                                        data-id="c48ea9c" data-element_type="widget"
+                                        data-widget_type="header-menu.default">
+                                        <div class="elementor-widget-container"><a href="#" class="switcher-btn"> <span
+                                            class="sw-before"> <svg xmlns="http://www.w3.org/2000/svg"
+                                                                    width="23" height="23" viewBox="0 0 23 23">
+														<path id="Dark_Theme" fill="#000"
+                                                              d="M1759.46,111.076a0.819,0.819,0,0,0-.68.147,8.553,8.553,0,0,1-2.62,1.537,8.167,8.167,0,0,1-2.96.531,8.655,8.655,0,0,1-8.65-8.682,9.247,9.247,0,0,1,.47-2.864,8.038,8.038,0,0,1,1.42-2.54,0.764,0.764,0,0,0-.12-1.063,0.813,0.813,0,0,0-.68-0.148,11.856,11.856,0,0,0-6.23,4.193,11.724,11.724,0,0,0,1,15.387,11.63,11.63,0,0,0,19.55-5.553A0.707,0.707,0,0,0,1759.46,111.076Zm-4.5,6.172a10.137,10.137,0,0,1-14.29-14.145,10.245,10.245,0,0,1,3.38-2.836c-0.14.327-.29,0.651-0.41,1.006a9.908,9.908,0,0,0-.56,3.365,10.162,10.162,0,0,0,10.15,10.189,9.776,9.776,0,0,0,3.49-.62,11.659,11.659,0,0,0,1.12-.473A10.858,10.858,0,0,1,1754.96,117.248Z"
+                                                              transform="translate(-1737 -98)"></path>
+													</svg> </span> <span class="sw-after"> <svg
+                                            xmlns="http://www.w3.org/2000/svg" width="22.22" height="22.313"
+                                            viewBox="0 0 22.22 22.313">
+														<path id="Light_Theme" fill="#fff"
+                                                              d="M1752.49,105.511a5.589,5.589,0,0,0-3.94-1.655,5.466,5.466,0,0,0-3.94,1.655,5.61,5.61,0,0,0,3.94,9.566,5.473,5.473,0,0,0,3.94-1.653,5.643,5.643,0,0,0,1.65-3.957A5.516,5.516,0,0,0,1752.49,105.511Zm-1.06,6.85a4.1,4.1,0,0,1-5.76,0,4.164,4.164,0,0,1,0-5.788A4.083,4.083,0,0,1,1751.43,112.361Zm7.47-3.662h-2.27a0.768,0.768,0,0,0,0,1.536h2.27A0.768,0.768,0,0,0,1758.9,108.7Zm-10.35,8.12a0.777,0.777,0,0,0-.76.769v2.274a0.777,0.777,0,0,0,.76.767,0.786,0.786,0,0,0,.77-0.767v-2.274A0.786,0.786,0,0,0,1748.55,116.819Zm7.85-.531-1.62-1.624a0.745,0.745,0,0,0-1.06,0,0.758,0.758,0,0,0,0,1.063l1.62,1.625a0.747,0.747,0,0,0,1.06,0A0.759,0.759,0,0,0,1756.4,116.288ZM1748.55,98.3a0.777,0.777,0,0,0-.76.768v2.273a0.778,0.778,0,0,0,.76.768,0.787,0.787,0,0,0,.77-0.768V99.073A0.786,0.786,0,0,0,1748.55,98.3Zm7.88,3.278a0.744,0.744,0,0,0-1.06,0l-1.62,1.624a0.758,0.758,0,0,0,0,1.063,0.745,0.745,0,0,0,1.06,0l1.62-1.624A0.758,0.758,0,0,0,1756.43,101.583Zm-15.96,7.116h-2.26a0.78,0.78,0,0,0-.77.768,0.76,0.76,0,0,0,.77.768h2.26A0.768,0.768,0,0,0,1740.47,108.7Zm2.88,5.965a0.745,0.745,0,0,0-1.06,0l-1.62,1.624a0.759,0.759,0,0,0,0,1.064,0.747,0.747,0,0,0,1.06,0l1.62-1.625A0.758,0.758,0,0,0,1743.35,114.664Zm0-11.457-1.62-1.624a0.744,0.744,0,0,0-1.06,0,0.758,0.758,0,0,0,0,1.063l1.62,1.624a0.745,0.745,0,0,0,1.06,0A0.758,0.758,0,0,0,1743.35,103.207Z"
+                                                              transform="translate(-1737.44 -98.313)"></path>
+													</svg> </span> </a> <a href="#"
+                                                                           class="menu-btn"><span></span><span></span></a>
+                                            <div class="menu-full-overlay">
+                                                <div class="menu-full-container">
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                                <div class="menu-full">
+                                                                    <ul id="menu-main-menu" class="menu-full">
+                                                                        <li id="menu-item-606"
+                                                                            class=" menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item ">
+                                                                            <a class=" splitting-text-anim-2"
+                                                                               data-splitting="chars" href="/">Home</a>
+                                                                        </li>
+                                                                        <li id="menu-item-1936"
+                                                                            class=" menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item ">
+                                                                            <a class=" splitting-text-anim-2"
+                                                                               data-splitting="chars"
+                                                                               href="/#services-section">Services</a>
+                                                                        </li>
+                                                                        <li id="menu-item-1938"
+                                                                            class=" menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item ">
+                                                                            <a class=" splitting-text-anim-2"
+                                                                               data-splitting="chars"
+                                                                               href="/#skills-section">Skills</a>
+                                                                        </li>
+                                                                        <li id="menu-item-608"
+                                                                            class=" menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item ">
+                                                                            <a class=" splitting-text-anim-2"
+                                                                               data-splitting="chars"
+                                                                               href="/#works-section">Works</a>
+                                                                        </li>
+                                                                        <li id="menu-item-607"
+                                                                            class=" menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item ">
+                                                                            <a class=" splitting-text-anim-2"
+                                                                               data-splitting="chars"
+                                                                               href="/#resume-section">Resume</a>
+                                                                        </li>
+                                                                        <li id="menu-item-610"
+                                                                            class=" menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item ">
+                                                                            <a class=" splitting-text-anim-2"
+                                                                               data-splitting="chars"
+                                                                               href="/#blog-section">Blog</a>
+                                                                        </li>
+                                                                        <li id="menu-item-611"
+                                                                            class=" menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item ">
+                                                                            <a class=" splitting-text-anim-2"
+                                                                               data-splitting="chars"
+                                                                               href="/#contact-section">Contact</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="menu-social-links"><a
+                                                                    href="{{ admin_data.linkedin }}" target="blank"
+                                                                    class="scrolla-element-anim-1" title="linkedin">
+                                                                    <i class="fa-brands fa-linkedin-in"></i> </a> <a
+                                                                    href="{{ admin_data.dev }}" target="blank"
+                                                                    class="scrolla-element-anim-1" title="dev">
+                                                                    <i class="fab fa-dev"></i> </a> <a
+                                                                    href="{{ admin_data.github }}" target="blank"
+                                                                    class="scrolla-element-anim-1" title="github">
+                                                                    <i class="fab fa-github"></i> </a></div>
+                                                                <div class="v-line-block"><span></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="menu-overlay"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </header>
+        <div class="wrapper">
+            <div class="section section-inner started-heading">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="m-titles align-center">
+                                <div class="m-category scrolla-element-anim-1 scroll-animate" data-animate="active">
+                                    <a href="/blog/category/{{ blog.cat }}" rel="category tag">{{ blog.cat }}</a>
+                                    / {{ blog.date }} / by <a href="{{ blog.author_link }}">{{ blog.author }}</a>
+                                </div>
+                                <h1 class="m-title scrolla-element-anim-1 scroll-animate"
+                                    data-animate="active">{{ blog.title }}</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section section-inner m-image-large">
+                <div class="container">
+                    <div class="v-line-right v-line-top">
+                        <div class="v-line-block"><span></span></div>
+                    </div>
+                </div>
+                <div class="image">
+                    <div class="img scrolla-element-anim-1 scroll-animate" data-animate="active"
+                         style="background-image: url({{ blog.hero_image }});">
+                    </div>
+                </div>
+            </div>
+            <div class="section section-inner m-archive">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 offset-1">
+                            <div id="post-532"
+                                 class="post-532 post type-post status-publish format-standard has-post-thumbnail hentry category-branding tag-design tag-ui tag-ux tag-wordpress">
+                                <div class="description">
+                                    <div class="post-content scrolla-element-anim-1 scroll-animate"
+                                         data-animate="active">
+                                        <p>{{ blog.abstract }}</p>
+                                        <blockquote class="wp-block-quote">
+                                            <p>{{ blog.quote }}</p>
+                                            <p><cite>&#8211; Destin Sparks</cite></p>
+                                        </blockquote>
+                                        <article id="blog" style="font-family: 'JetBrains Mono', monospace !important;">
+                                            {{ blog.body | safe }}
+                                        </article>
+                                    </div>
+                                    <div
+                                        class="share-post social social-share scrolla-element-anim-1 scroll-animate animate__active animate__animated"
+                                        data-animate="active" style="margin-top: 6em;">
+                                        <h5>Share Article</h5>
+                                        <a class="social__link share-btn share-btn-twitter share-btn-2"
+                                           style="border: none"
+                                           target="_blank"
+                                           href="https://twitter.com/intent/tweet?text={{ request.build_absolute_uri }}">
+                                            <i class="fa-brands fa-twitter"></i>
+                                            <span>Twitter</span>
+                                        </a>
+                                        <a class="social__link share-btn share-btn-linkedin share-btn-3"
+                                           style="border: none"
+                                           target="_blank"
+                                           href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ request.build_absolute_uri }}">
+                                            <i class="fa-brands fa-linkedin"></i>
+                                            <span>Linkedin</span>
+                                        </a>
+                                        <a class="social__link share-btn share-btn-reddit share-btn-4"
+                                           style="border: none"
+                                           target="_blank"
+                                           href="https://www.reddit.com/submit?url={{ request.build_absolute_uri }}">
+                                            <i class="fa-brands fa-reddit"></i>
+                                            <span>Reddit</span>
+                                        </a>
+                                    </div>
+                                    <div style="margin-top: 4em" id="disqus_thread"></div>
+                                </div>
+                            </div>
+                            <div class="v-line-left v-line-top">
+                                <div class="v-line-block"><span></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section section-inner m-page-navigation">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 offset-1">
+                            <div class="h-titles h-navs"><a
+                                href="/blog/{{ recommendation.date | date:"Y" }}/{{ recommendation.date | date:"m" }}/{{ recommendation.date | date:"d" }}/{{ recommendation.slug }}"> <span
+                                class="nav-arrow splitting-text-anim-1 scroll-animate" data-splitting="chars"
+                                data-animate="active"> Next Article </span> <span
+                                class="h-title splitting-text-anim-2 scroll-animate" data-splitting="chars"
+                                data-animate="active"> {{ recommendation.title }} </span> </a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer__builder">
+                <div data-elementor-type="wp-post" data-elementor-id="148" class="elementor elementor-148">
+                    <section
+                        class="elementor-section elementor-top-section elementor-element elementor-element-2292e97 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                        data-id="2292e97" data-element_type="section">
+                        <div class="elementor-container elementor-column-gap-default">
+                            <div
+                                class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-1b638f0"
+                                data-id="1b638f0" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div
+                                        class="elementor-element elementor-element-2cc9b55 elementor-widget elementor-widget-portfolio-social-links"
+                                        data-id="2cc9b55" data-element_type="widget"
+                                        data-widget_type="portfolio-social-links.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="social-links scrolla-element-anim-1 scroll-animate"
+                                                 data-animate="active"><a target="_blank" rel="nofollow"
+                                                                          href="{{ admin_data.dev }}"> <i
+                                                aria-hidden="true"
+                                                class="fab fa-dev"></i>
+                                            </a> <a target="_blank" rel="nofollow" href="{{ admin_data.linkedin }}"> <i
+                                                aria-hidden="true" class="fab fa-linkedin-in"></i> </a> <a
+                                                target="_blank" rel="nofollow" href="{{ admin_data.github }}"> <i
+                                                aria-hidden="true" class="fab fa-github"></i> </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-1c9b303"
+                                data-id="1c9b303" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div
+                                        class="elementor-element elementor-element-c385779 elementor-widget elementor-widget-portfolio-copyright"
+                                        data-id="c385779" data-element_type="widget"
+                                        data-widget_type="portfolio-copyright.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="copyright-text scrolla-element-anim-1 scroll-animate"
+                                                 data-animate="active">
+                                                <div>
+                                                    <p>© 2022 <strong>Shubham</strong>. All rights reserved</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-2e4ce90"
+                                data-id="2e4ce90" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div
+                                        class="elementor-element elementor-element-8b314e8 elementor-widget elementor-widget-portfolio-copyright"
+                                        data-id="8b314e8" data-element_type="widget"
+                                        data-widget_type="portfolio-copyright.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="copyright-text scrolla-element-anim-1 scroll-animate"
+                                                 data-animate="active">
+                                                <div> Developed by <strong>Shubham Singh</strong></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cursor"></div>
+    <link rel='stylesheet' id='google-fonts-1-css'
+          href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=auto&amp;ver=6.1.1'
+          type='text/css' media='all'/>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"
+            integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"
+            integrity="sha512-3j3VU6WC5rPQB4Ld1jnLV7Kd5xr+cq9avvhwqzbH/taCRNURoeEpoPBK9pDyeukwSxwRPJ8fDgvYXd6SkaZ2TA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+            integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+            crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/autoloader/prism-autoloader.min.js"
+            integrity="sha512-fTl/qcO1VgvKtOMApX2PdZzkziyr2stM65GYPLGuYMnuMm1z2JLJG6XVU7C/mR+E7xBUqCivykuhlzfqxXBXbg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    {% compress js %}
+        <script src="{% static 'javascript/services.js' %}"></script>
+        <script src="{% static 'javascript/renderer.js' %}"></script>
+        <script src="{% static 'javascript/tabs.js' %}"></script>
+        <script src="{% static 'javascript/swiper.js' %}"></script>
+        <script src="{% static 'javascript/webkitTransform.js' %}"></script>
+        <script src="{% static 'javascript/imageLoaded.js' %}"></script>
+        <script src="{% static 'javascript/loader.js' %}"></script>
+        <script src="{% static 'javascript/elementor.min.js' %}"></script>
+    {% endcompress %}
+
+    <script>
+        window.addEventListener("load", function () {
+            Prism.highlightAll();
+        });
+    </script>
+
+    <script>
+        /**
+         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function () { // DON'T EDIT BELOW THIS LINE
+            const d = document, s = d.createElement('script');
+            s.src = 'https://ishubhamsingh.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+        Disqus.</a></noscript>
+
+    </body>
+{% endblock body %}
