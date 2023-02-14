@@ -36,7 +36,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["www.ishubhamsingh.me", "localhost", "127.0.0.1", "*.vercel.app"]
+ALLOWED_HOSTS = ["www.ishubhamsingh.me", "localhost", "127.0.0.1", "personal-website-git-main-ishubhamsingh2e.vercel.app"]
 
 # Application definition
 
