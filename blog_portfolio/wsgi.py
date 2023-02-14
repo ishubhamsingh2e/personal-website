@@ -16,12 +16,12 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'blog_portfolio.settings')
 
 # PRODUCTION
 
-# app = WhiteNoise(
-#     get_wsgi_application(),
-#     root="./staticfiles_build/static"
-# )
-# app.add_files("./staticfiles_build/static", prefix="more-files/")
+app = WhiteNoise(
+    get_wsgi_application(),
+    root="./staticfiles_build/static"
+)
+app.add_files("./staticfiles_build/static", prefix="more-files/")
 
 # DEVELOPMENT
 
-application = get_wsgi_application()
+# application = get_wsgi_application()
