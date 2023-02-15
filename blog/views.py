@@ -27,6 +27,7 @@ def blog(request):
         cache.set("blogs", blogs, timeout=60 * 1440 * 30)
     blogs_recent = blogs.reverse()[:5]
 
+    # TODO fix search error
     if request.method == "POST":
         searched = request.POST["query"]
         blogs = Blog.objects.filter(title__contains=searched)
