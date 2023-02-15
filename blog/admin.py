@@ -2,6 +2,8 @@ from django.contrib import admin
 from .models import *
 import markdown
 
+from django.core.cache import cache
+
 
 # Register your models here.
 
@@ -16,6 +18,10 @@ class BlogAdmin(admin.ModelAdmin):
         obj.blog_html = markdown.markdown(obj.body,
                                           extensions=['tables', 'fenced_code',
                                                       'codehilite'])
+
+        # Delete Cache
+        if cache.get(f"{obj.slug}"):
+            cache.delete(f"{obj.slug}")
 
         super().save_model(request, obj, form, change)
 
