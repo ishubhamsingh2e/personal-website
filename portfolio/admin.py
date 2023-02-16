@@ -5,6 +5,7 @@ from .models import *
 
 
 class DataAdmin(admin.ModelAdmin):
+    list_display = ('userName', 'email', 'blog_category')
 
     def save_model(self, request, obj, form, change):
         if cache.get("admin-data"):
@@ -14,6 +15,7 @@ class DataAdmin(admin.ModelAdmin):
 
 
 class ProjectAdmin(admin.ModelAdmin):
+    list_display = ('title', 'time', 'project_url')
 
     def save_model(self, request, obj, form, change):
         if cache.get(f"project-{obj.id}"):
@@ -23,6 +25,7 @@ class ProjectAdmin(admin.ModelAdmin):
 
 
 class ServiceAdmin(admin.ModelAdmin):
+    list_display = ('field', 'title')
 
     def save_model(self, request, obj, form, change):
         if cache.get("services"):
@@ -32,6 +35,7 @@ class ServiceAdmin(admin.ModelAdmin):
 
 
 class SkillAdmin(admin.ModelAdmin):
+    list_display = ('skill', 'level')
 
     def save_model(self, request, obj, form, change):
         if cache.get("skills"):
@@ -41,6 +45,7 @@ class SkillAdmin(admin.ModelAdmin):
 
 
 class StoryEducationAdmin(admin.ModelAdmin):
+    list_display = ('title', 'syear', 'eyear')
 
     def save_model(self, request, obj, form, change):
         if cache.get("education"):
@@ -50,6 +55,7 @@ class StoryEducationAdmin(admin.ModelAdmin):
 
 
 class StoryExperienceAdmin(admin.ModelAdmin):
+    list_display = ('title', 'syear', 'eyear')
 
     def save_model(self, request, obj, form, change):
         if cache.get("experience"):
