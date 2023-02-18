@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 import os
 from pathlib import Path
+
 import environ
 
 # environment setup
@@ -42,6 +43,7 @@ ALLOWED_HOSTS = ["www.ishubhamsingh.me", "localhost", "127.0.0.1", "personal-web
 
 INSTALLED_APPS = [
     'portfolio.apps.PortfolioConfig',
+    'clearcache',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -154,7 +156,6 @@ STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesSto
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-
 # compression
 
 STATICFILES_FINDERS = (
@@ -166,7 +167,6 @@ COMPRESS_ENABLED = True
 COMPRESS_OFFLINE = True
 
 if DEBUG:
-
     INSTALLED_APPS.append('debug_toolbar')
     MIDDLEWARE.append('debug_toolbar.middleware.DebugToolbarMiddleware')
 
