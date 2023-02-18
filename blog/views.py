@@ -84,7 +84,7 @@ def category(request, _filter):
         admin_data = AdminData.objects.first()
         cache.set("admin-data", admin_data, timeout=60 * 1440 * 30)
 
-    blogs = Blog.objects.filter(cat=_filter.replace("-", " "))
+    blogs = Blog.objects.filter(category=_filter.replace("-", " "))
 
     _blog = cache.get("blog-all")
     if not _blog:
