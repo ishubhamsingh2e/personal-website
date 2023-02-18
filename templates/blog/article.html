@@ -36,6 +36,14 @@
     <meta property="twitter:image:alt" content="{{ blog.hero_image_alt }}" />
     <meta name="twitter:card" content="{{ blog.meta_description }}" />
     <meta name="twitter:site" content="@ishubhamsingh2e" />
+
+    <style>
+        .hero-image{
+            position: relative;
+            width: 100%;
+            height: 740px
+        }
+    </style>
 {% endblock head %}
 
 {% block body %}
@@ -196,10 +204,8 @@
                         <div class="v-line-block"><span></span></div>
                     </div>
                 </div>
-                <div class="image">
-                    <div class="img scrolla-element-anim-1 scroll-animate" data-animate="active"
-                         style="background-image: url({{ blog.hero_image }});">
-                    </div>
+                <div class="img scrolla-element-anim-1 scroll-animate hero-image" data-animate="active">
+                    <img decoding="async" src="{{ blog.hero_image }}" style="height: 100%;object-fit: cover;">
                 </div>
             </div>
             <div class="section section-inner m-archive">
