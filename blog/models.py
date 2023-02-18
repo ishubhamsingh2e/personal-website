@@ -10,30 +10,25 @@ class Blog(models.Model):
 
     title = models.CharField(max_length=250)
     slug = models.SlugField(max_length=250)
-    date = models.DateField()
+    date = models.DateField(auto_now_add=True)
     author = models.CharField(max_length=50)
     author_link = models.URLField()
     tags = models.CharField(max_length=100)
-    cat = models.CharField(max_length=50, choices=(
+    category = models.CharField(max_length=50, choices=(
         ("ui/ux", "UI"),
         ("machine learning", "ML"),
         ("development", "DEV"),
         ("research", "RE")
     ))
-    cat_1 = models.CharField(max_length=50, choices=(
+    sub_category = models.CharField(max_length=50, choices=(
         ("sorting-ui-ux", "UI"),
         ("sorting-ml", "ML"),
         ("sorting-development", "DEV"),
         ("sorting-research", "RE")
     ))
-    cat_2 = models.CharField(max_length=50, choices=(
-        ("sorting-ui-ux", "UI"),
-        ("sorting-ml", "ML"),
-        ("sorting-development", "DEV"),
-        ("sorting-research", "RE")
-    ))
-    hero_image = models.CharField(max_length=300)
-    abstract = models.TextField()
+    hero_image = models.URLField()
+    hero_image_alt = models.CharField(max_length=300, blank=True)
+    meta_description = models.TextField()
     quote = models.TextField()
     body = models.TextField()
     status = models.CharField(max_length=10, choices=STATUS_CHOICE,
