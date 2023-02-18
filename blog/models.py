@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 
 
 class Blog(models.Model):
@@ -37,6 +38,14 @@ class Blog(models.Model):
     body = models.TextField()
     status = models.CharField(max_length=10, choices=STATUS_CHOICE,
                               default='draft')
+
+    def get_absolute_url(self):
+        return reverse('article', args=[
+            self.date.year,
+            self.date.month,
+            self.date.day,
+            self.slug
+        ])
 
     class Meta:
         ordering = ("-date",)
