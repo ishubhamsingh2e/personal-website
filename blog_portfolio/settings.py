@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 import os
 from pathlib import Path
+
 import environ
 
 # environment setup
@@ -23,6 +24,8 @@ DATABASES_KEY = env("DATABASES_KEY")
 REDIS_USER = env("REDIS_USER")
 REDIS_KEY = env("REDIS_KEY")
 SECRET_KEY = env("SECRET_KEY")
+DATABASES_STRING = env("DATABASES_STRING")
+REDIS_STRING = env("REDIS_STRING")
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -36,12 +39,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["www.ishubhamsingh.me", "localhost", "127.0.0.1", "personal-website-git-main-ishubhamsingh2e.vercel.app"]
+ALLOWED_HOSTS = ["*"]
 
 # Application definition
 
 INSTALLED_APPS = [
     'portfolio.apps.PortfolioConfig',
+    'clearcache',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -93,7 +97,7 @@ DATABASES = {
         'ENGINE': 'djongo',
         'NAME': 'portfolio',
         'CLIENT': {
-            'host': f"mongodb+srv://{DATABASES_USER}:{DATABASES_KEY}@portfolio.dpbgv1k.mongodb.net/?retryWrites=true&w=majority",
+            'host': DATABASES_STRING,
             'username': DATABASES_USER,
             'password': DATABASES_KEY
         }
@@ -103,7 +107,7 @@ DATABASES = {
 CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": f"redis://{REDIS_USER}:{REDIS_KEY}@redis-13074.c212.ap-south-1-1.ec2.cloud.redislabs.com:13074",
+        "LOCATION": REDIS_STRING,
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient"
         },
@@ -154,7 +158,6 @@ STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesSto
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-
 # compression
 
 STATICFILES_FINDERS = (
@@ -166,7 +169,6 @@ COMPRESS_ENABLED = True
 COMPRESS_OFFLINE = True
 
 if DEBUG:
-
     INSTALLED_APPS.append('debug_toolbar')
     MIDDLEWARE.append('debug_toolbar.middleware.DebugToolbarMiddleware')
 

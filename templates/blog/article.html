@@ -21,6 +21,29 @@
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.22.0/themes/prism.css">
 
+    <meta name="description" property="og:description" content="{{ blog.meta_description }}">
+    <meta name="keywords" content="{{ blog.tags }}">
+    <meta name="author" content="{{ blog.author }}, ishubhamsingh2egmail.com">
+
+    {# Open Graph Meta Tags #}
+    <meta property="og:url" content="{{ request.build_absolute_uri }}" />
+    <meta property="og:title" content="{{ blog.title }}" />
+    <meta property="og:image" content="{{ blog.hero_image }}" />
+    <meta property="og:image:alt" content="{{ blog.hero_image_alt }}" />
+
+    {# twitter #}
+    <meta name="twitter:image" content="{{ blog.hero_image }}" />
+    <meta property="twitter:image:alt" content="{{ blog.hero_image_alt }}" />
+    <meta name="twitter:card" content="{{ blog.meta_description }}" />
+    <meta name="twitter:site" content="@ishubhamsingh2e" />
+
+    <style>
+        .hero-image{
+            position: relative;
+            width: 100%;
+            height: 740px
+        }
+    </style>
 {% endblock head %}
 
 {% block body %}
@@ -165,7 +188,7 @@
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <div class="m-titles align-center">
                                 <div class="m-category scrolla-element-anim-1 scroll-animate" data-animate="active">
-                                    <a href="/blog/category/{{ blog.cat }}" rel="category tag">{{ blog.cat }}</a>
+                                    <a href="/blog/category/{{ blog.category }}" rel="category tag">{{ blog.category }}</a>
                                     / {{ blog.date }} / by <a href="{{ blog.author_link }}">{{ blog.author }}</a>
                                 </div>
                                 <h1 class="m-title scrolla-element-anim-1 scroll-animate"
@@ -181,10 +204,8 @@
                         <div class="v-line-block"><span></span></div>
                     </div>
                 </div>
-                <div class="image">
-                    <div class="img scrolla-element-anim-1 scroll-animate" data-animate="active"
-                         style="background-image: url({{ blog.hero_image }});">
-                    </div>
+                <div class="img scrolla-element-anim-1 scroll-animate hero-image" data-animate="active">
+                    <img decoding="async" src="{{ blog.hero_image }}" style="height: 100%;object-fit: cover;">
                 </div>
             </div>
             <div class="section section-inner m-archive">
@@ -196,11 +217,6 @@
                                 <div class="description">
                                     <div class="post-content scrolla-element-anim-1 scroll-animate"
                                          data-animate="active">
-                                        <p>{{ blog.abstract }}</p>
-                                        <blockquote class="wp-block-quote">
-                                            <p>{{ blog.quote }}</p>
-                                            <p><cite>&#8211; Destin Sparks</cite></p>
-                                        </blockquote>
                                         <article id="blog" style="font-family: 'JetBrains Mono', monospace !important;">
                                             {{ blog.body | safe }}
                                         </article>

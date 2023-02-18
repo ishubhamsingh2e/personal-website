@@ -16,6 +16,7 @@ waitress = "*"
 whitenoise = "*"
 django-redis = "*"
 django-environ = "*"
+django-clearcache = "*"
 
 [dev-packages]
 djlint = "*"
