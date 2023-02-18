@@ -11,11 +11,7 @@ from django.core.cache import cache
 
 @cache_page(60 * 15)
 def index(request):
-    services = cache.get("services")
-    if not services:
-        services = Service.objects.all()
-        cache.set("services", services, timeout=60 * 1440 * 30)
-
+    services = Service.objects.all()
     skills = cache.get("skills")
     if not skills:
         skills = Skill.objects.all()
