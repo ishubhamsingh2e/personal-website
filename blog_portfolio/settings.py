@@ -24,6 +24,8 @@ DATABASES_KEY = env("DATABASES_KEY")
 REDIS_USER = env("REDIS_USER")
 REDIS_KEY = env("REDIS_KEY")
 SECRET_KEY = env("SECRET_KEY")
+DATABASES_STRING = env("DATABASES_STRING")
+REDIS_STRING = env("REDIS_STRING")
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -95,7 +97,7 @@ DATABASES = {
         'ENGINE': 'djongo',
         'NAME': 'portfolio',
         'CLIENT': {
-            'host': f"mongodb+srv://{DATABASES_USER}:{DATABASES_KEY}@portfolio.dpbgv1k.mongodb.net/?retryWrites=true&w=majority",
+            'host': DATABASES_STRING,
             'username': DATABASES_USER,
             'password': DATABASES_KEY
         }
@@ -105,7 +107,7 @@ DATABASES = {
 CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": f"redis://{REDIS_USER}:{REDIS_KEY}@redis-13074.c212.ap-south-1-1.ec2.cloud.redislabs.com:13074",
+        "LOCATION": REDIS_STRING,
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient"
         },
