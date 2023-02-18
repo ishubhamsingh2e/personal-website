@@ -15,7 +15,7 @@ class BlogAdmin(admin.ModelAdmin):
 
     def save_model(self, request, obj, form, change):
         # Convert the Markdown to HTML
-        obj.blog_html = markdown.markdown(obj.body,
+        obj.body = markdown.markdown(obj.body,
                                           extensions=['tables', 'fenced_code',
                                                       'codehilite'])
 
