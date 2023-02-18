@@ -66,7 +66,7 @@ def article(request, year, month, day, slug):
 
     _blog = cache.get("blog-all")
     if not _blog:
-        _blog = Blog.objects.all()
+        _blog = Blog.objects.filter(status="published")
         cache.set("blog-all", _blog, timeout=60 * 1440 * 30)
 
     recommendation = _blog.exclude(slug__exact=_article.slug)
@@ -88,7 +88,7 @@ def category(request, _filter):
 
     _blog = cache.get("blog-all")
     if not _blog:
-        _blog = Blog.objects.all()
+        _blog = Blog.objects.filter(status="published")
         cache.set("blog-all", _blog, timeout=60 * 1440 * 30)
     blogs_recent = _blog[0:5]
 
