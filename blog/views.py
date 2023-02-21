@@ -9,7 +9,7 @@ from django.core.cache import cache
 
 # Create your views here.
 
-@cache_page(60*15)
+@cache_page(60 * 1440 * 15)
 def blog(request):
     admin_data = cache.get("admin-data")
     if not admin_data:
@@ -21,10 +21,10 @@ def blog(request):
         _cat = AdminData.blog_category.all()
         cache.set("cat", _cat, timeout=60 * 1440 * 30)
 
-    blogs = cache.get("blogs")
+    blogs = cache.get("blog-all")
     if not blogs:
-        blogs = Blog.objects.all().reverse()
-        cache.set("blogs", blogs, timeout=60 * 1440 * 30)
+        blogs = Blog.objects.all()
+        cache.set("blog-all", blogs, timeout=60 * 1440 * 30)
     blogs_recent = blogs.reverse()[:5]
 
     # TODO fix search error
@@ -52,7 +52,7 @@ def blog(request):
         })
 
 
-@cache_page(60 * 15)
+@cache_page(60 * 1440 * 15)
 def article(request, year, month, day, slug):
     _article = cache.get(f"{slug}")
     if not _article:
@@ -77,7 +77,7 @@ def article(request, year, month, day, slug):
     })
 
 
-@cache_page(60 * 15)
+@cache_page(60 * 1440 * 15)
 def category(request, _filter):
     admin_data = cache.get("admin-data")
     if not admin_data:

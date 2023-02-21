@@ -9,7 +9,7 @@ from django.core.cache import cache
 # Create your views here.
 
 
-@cache_page(60 * 15)
+@cache_page(60 * 1440 * 15)
 def index(request):
     services = Service.objects.all()
     skills = cache.get("skills")
@@ -63,7 +63,7 @@ def index(request):
     })
 
 
-@cache_page(60 * 15)
+@cache_page(60 * 1440 * 15)
 def project(request, project_id):
     admin_data = cache.get("admin-data")
     if not admin_data:
