@@ -1,0 +1,28 @@
+{% extends 'admin/base.html' %}
+
+{% block content %}
+    <h1>Cached Data</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Key</th>
+                <th>Value</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for key, value in cache_data.items %}
+                <tr>
+                    <td>{{ key }}</td>
+                    <td>{{ value }}</td>
+                    <td>
+                        <form method="GET" action="/admin/cache_viewer">
+                            <input type="hidden" name="delete_key" value="{{ key }}">
+                            <button style="cursor: pointer" type="submit">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
