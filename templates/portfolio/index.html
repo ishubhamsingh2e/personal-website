@@ -18,7 +18,7 @@
         <div class="preloader">
             <div class="centrize full-width">
                 <div class="vertical-center">
-                    <div class="spinner-logo"><img src="{% static 'images/logo.png' %}" alt="logo"/>
+                    <div class="spinner-logo"><img loading="lazy" src="{% static 'images/logo.png' %}" alt="logo"/>
                         <div class="spinner-dot"></div>
                         <div class="spinner spinner-line"></div>
                     </div>
@@ -40,6 +40,7 @@
                                         class="elementor-element elementor-element-6b2395b elementor-widget elementor-widget-image"
                                         data-id="6b2395b" data-element_type="widget" data-widget_type="image.default">
                                         <div class="elementor-widget-container"><a href="/"> <img decoding="async"
+                                                                                                  loading="lazy"
                                                                                                         width="228"
                                                                                                         height="38"
                                                                                                         src="{% static 'images/logo.png' %}"
@@ -204,6 +205,7 @@
                                                 </div>
                                                 <div class="slide scrolla-element-anim-1 scroll-animate"
                                                      data-animate="active"><img decoding="async"
+                                                                                loading="lazy"
                                                                                 src="{% static 'images/me.png' %}"
                                                                                 alt="me"/>
                                                     <span class="circle circle-1"></span> <span class="circle img-1"
@@ -497,6 +499,7 @@
                                                                                     <div class="img"><a
                                                                                         href="/project/{{ project.id }}">
                                                                                         <img decoding="async"
+                                                                                             loading="lazy"
                                                                                              src="{{ project.hero_image }}"
                                                                                              alt="{{ project.title }}"/>
                                                                                         <span
@@ -786,6 +789,7 @@
                                                                                 <div class="image"><a
                                                                                     href="/blog/{{ blog.date | date:"Y" }}/{{ blog.date | date:"m" }}/{{ blog.date | date:"d" }}/{{ blog.slug }}">
                                                                                     <img decoding="async"
+                                                                                         loading="lazy"
                                                                                          src="{{ blog.hero_image }}"
                                                                                          alt="{{ blog.title }}"/>
                                                                                 </a></div>
