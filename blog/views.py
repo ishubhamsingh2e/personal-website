@@ -9,7 +9,7 @@ from django.core.cache import cache
 
 # Create your views here.
 
-@cache_page(60 * 1440 * 15)
+@cache_page(60 * 1440 * 15, key_prefix="blogs")
 def blog(request):
     admin_data = cache.get("admin-data")
     if not admin_data:
@@ -52,7 +52,7 @@ def blog(request):
         })
 
 
-@cache_page(60 * 1440 * 15)
+@cache_page(60 * 1440 * 15, key_prefix="article")
 def article(request, year, month, day, slug):
     _article = cache.get(f"{slug}")
     if not _article:
@@ -77,7 +77,7 @@ def article(request, year, month, day, slug):
     })
 
 
-@cache_page(60 * 1440 * 15)
+@cache_page(60 * 1440 * 15, key_prefix="category")
 def category(request, _filter):
     admin_data = cache.get("admin-data")
     if not admin_data:
