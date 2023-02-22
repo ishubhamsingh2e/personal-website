@@ -16,7 +16,8 @@
                     <td>{{ key }}</td>
                     <td>{{ value }}</td>
                     <td>
-                        <form method="GET" action="/admin/cache_viewer">
+                        <form method="POST" action="/cache_delete">
+                            {% csrf_token %}
                             <input type="hidden" name="delete_key" value="{{ key }}">
                             <button style="cursor: pointer" type="submit">Delete</button>
                         </form>

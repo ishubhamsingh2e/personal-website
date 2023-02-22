@@ -15,5 +15,6 @@ sitemaps = {
 urlpatterns = [
     path('', views.index, name='index'),
     path('project/<project_id>', views.project, name='project'),
+    path('cache_delete', views.remove_cache, name="remove_cache"),
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap')
 ]

@@ -1,10 +1,12 @@
-from django.shortcuts import render
+from django.http import HttpResponse
+from django.shortcuts import render, redirect
 
 from blog.models import Blog
 from .models import *
 
 from django.views.decorators.cache import cache_page
 from django.core.cache import cache
+
 
 # Create your views here.
 
@@ -87,3 +89,11 @@ def project(request, project_id):
         'project': _project,
         'next_project': _next_project,
     })
+
+
+def remove_cache(request):
+    if request.POST:
+        cache.delete(request.POST['delete_key'])
+        return HttpResponse(f"<h1>SUCCESS deleted({ request.POST['delete_key'] })<h1>")
+    return HttpResponse('<h1>FAILED BAD REQUEST<h1>')
+
