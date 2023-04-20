@@ -27,7 +27,7 @@ class BlogSitemap(Sitemap):
 
 
 class RssSitemap(Sitemap):
-    changefreq = "never"
+    changefreq = "always"
     priority = 0.1
 
     def items(self):

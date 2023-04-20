@@ -40,9 +40,6 @@ class Blog(models.Model):
 
     def get_absolute_url(self):
         return reverse('article', args=[
-            self.date.year,
-            self.date.month,
-            self.date.day,
             self.slug
         ])
 
