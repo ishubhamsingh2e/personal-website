@@ -39,14 +39,15 @@
                                     <div
                                         class="elementor-element elementor-element-6b2395b elementor-widget elementor-widget-image"
                                         data-id="6b2395b" data-element_type="widget" data-widget_type="image.default">
-                                        <div class="elementor-widget-container"><a href="{% url 'index' %}"> <img decoding="async"
-                                                                                                  loading="lazy"
-                                                                                                        width="228"
-                                                                                                        height="38"
-                                                                                                        src="{% static 'images/logo.png' %}"
-                                                                                                        class="attachment-full size-full"
-                                                                                                        alt=""
-                                                                                                        loading="lazy"/>
+                                        <div class="elementor-widget-container"><a href="{% url 'index' %}"> <img
+                                            decoding="async"
+                                            loading="lazy"
+                                            width="228"
+                                            height="38"
+                                            src="{% static 'images/logo.png' %}"
+                                            class="attachment-full size-full"
+                                            alt=""
+                                            loading="lazy"/>
                                         </a>
                                         </div>
                                     </div>
@@ -84,43 +85,44 @@
                                                                         <li id="menu-item-606"
                                                                             class=" menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item ">
                                                                             <a class=" splitting-text-anim-2"
-                                                                               data-splitting="chars" href="{% url 'index' %}">Home</a>
+                                                                               data-splitting="chars"
+                                                                               href="{% url 'index' %}">Home</a>
                                                                         </li>
                                                                         <li id="menu-item-1936"
                                                                             class=" menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item ">
                                                                             <a class=" splitting-text-anim-2"
                                                                                data-splitting="chars"
-                                                                               href="{% url '#services-section' %}">Services</a>
+                                                                               href="#services-section">Services</a>
                                                                         </li>
                                                                         <li id="menu-item-1938"
                                                                             class=" menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item ">
                                                                             <a class=" splitting-text-anim-2"
                                                                                data-splitting="chars"
-                                                                               href="{% url '#skills-section' %}">Skills</a>
+                                                                               href="#skills-section">Skills</a>
                                                                         </li>
                                                                         <li id="menu-item-608"
                                                                             class=" menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item ">
                                                                             <a class=" splitting-text-anim-2"
                                                                                data-splitting="chars"
-                                                                               href="{% url '#works-section' %}">Works</a>
+                                                                               href="#works-section">Works</a>
                                                                         </li>
                                                                         <li id="menu-item-607"
                                                                             class=" menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item ">
                                                                             <a class=" splitting-text-anim-2"
                                                                                data-splitting="chars"
-                                                                               href="{% url '#resume-section' %}">Resume</a>
+                                                                               href="#resume-section">Resume</a>
                                                                         </li>
                                                                         <li id="menu-item-610"
                                                                             class=" menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item ">
                                                                             <a class=" splitting-text-anim-2"
                                                                                data-splitting="chars"
-                                                                               href="{% url '#blog-section' %}">Blog</a>
+                                                                               href="#blog-section">Blog</a>
                                                                         </li>
                                                                         <li id="menu-item-611"
                                                                             class=" menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item ">
                                                                             <a class=" splitting-text-anim-2"
                                                                                data-splitting="chars"
-                                                                               href="{% url '#contact-section' %}">Contact</a>
+                                                                               href="#contact-section">Contact</a>
                                                                         </li>
                                                                     </ul>
                                                                 </div>
@@ -787,7 +789,7 @@
                                                                             <div
                                                                                 class="post type-post status-publish format-standard has-post-thumbnail hentry category-branding category-ui-design tag-branding tag-design tag-development tag-ui">
                                                                                 <div class="image"><a
-                                                                                    href="{% url 'article' year=blog.date | date:"Y" month=blog.date | date:"m" day=blog.date | date:"d" slug=blog.slug %}">
+                                                                                    href="{% url 'article' slug=blog.slug %}">
                                                                                     <img decoding="async"
                                                                                          loading="lazy"
                                                                                          src="{{ blog.hero_image }}"
@@ -798,12 +800,12 @@
                                                                                         <span>{{ blog.date }}</span>
                                                                                     </div>
                                                                                     <h5 class="lui-title"><a
-                                                                                        href="{% url 'article' year=blog.date | date:"Y" month=blog.date | date:"m" day=blog.date | date:"d" slug=blog.slug %}"></a>
+                                                                                        href="{% url 'article' slug=blog.slug %}"></a>
                                                                                     </h5>
                                                                                     <div class="lui-text">
                                                                                         <p>{{ blog.meta_description }}</p>
                                                                                         <div class="readmore"><a
-                                                                                            href="{% url 'article' year=blog.date | date:"Y" month=blog.date | date:"m" day=blog.date | date:"d" slug=blog.slug %}"
+                                                                                            href="{% url 'article' slug=blog.slug %}"
                                                                                             class="lnk">Read more</a>
                                                                                         </div>
                                                                                     </div>

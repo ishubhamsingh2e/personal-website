@@ -35,7 +35,7 @@
                                     <div
                                         class="elementor-element elementor-element-6b2395b elementor-widget elementor-widget-image"
                                         data-id="6b2395b" data-element_type="widget" data-widget_type="image.default">
-                                        <div class="elementor-widget-container"><a href="/"> <img
+                                        <div class="elementor-widget-container"><a href="{% url 'index' %}"> <img
                                             decoding="async" width="228" height="38"
                                             src="{% static 'images/logo.png' %}"
                                             class="attachment-full size-full" alt="" loading="lazy"/> </a>
@@ -75,13 +75,13 @@
                                                                         <li id="menu-item-606"
                                                                             class=" menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item ">
                                                                             <a class=" splitting-text-anim-2"
-                                                                               data-splitting="chars" href="/">Home</a>
+                                                                               data-splitting="chars" href="{% url 'index' %}">Home</a>
                                                                         </li>
                                                                         <li id="menu-item-1936"
                                                                             class=" menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item ">
                                                                             <a class=" splitting-text-anim-2"
                                                                                data-splitting="chars"
-                                                                               href="/#services-section<">Services</a>
+                                                                               href="/#services-section">Services</a>
                                                                         </li>
                                                                         <li id="menu-item-1938"
                                                                             class=" menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item ">
@@ -169,7 +169,7 @@
                                             <div id="post-2017"
                                                  class="post-2017 post type-post status-publish format-standard has-post-thumbnail hentry category-branding category-ui-design tag-branding tag-design tag-development tag-ui">
                                                 <div class="image"><a
-                                                    href="/blog/{{ blog.date | date:"Y" }}/{{ blog.date | date:"m" }}/{{ blog.date | date:"d" }}/{{ blog.slug }}">
+                                                    href="{% url 'article' slug=blog.slug %}">
                                                     <img
                                                         src="{{ blog.hero_image }}"
                                                         alt="Hero IMage"/> </a>
@@ -178,12 +178,12 @@
                                                     <div class="category lui-subtitle"><span>October 31, 2022</span>
                                                     </div>
                                                     <h5 class="lui-title"><a
-                                                        href="/blog/{{ blog.date | date:"Y" }}/{{ blog.date | date:"m" }}/{{ blog.date | date:"d" }}/{{ blog.slug }}">{{ blog.title }}</a>
+                                                        href="{% url 'article' slug=blog.slug %}"></a>
                                                     </h5>
                                                     <div class="lui-text">
                                                         <p>{{ blog.abstract }}</p>
                                                         <div class="readmore"><a
-                                                            href="/blog/{{ blog.date | date:"Y" }}/{{ blog.date | date:"m" }}/{{ blog.date | date:"d" }}/{{ blog.slug }}"
+                                                            href="{% url 'article' slug=blog.slug %}"
                                                             class="lnk">Read more</a></div>
                                                     </div>
                                                 </div>
@@ -228,7 +228,7 @@
                                                     <ul class="wp-block-latest-posts__list wp-block-latest-posts">
                                                         {% for r in recent %}
                                                             <li><a class="wp-block-latest-posts__post-title"
-                                                                   href="/blog/{{ r.date | date:"Y" }}/{{ r.date | date:"m" }}/{{ r.date | date:"d" }}/{{ r.slug }}">{{ r.title }}</a>
+                                                                   href="{% url 'article' slug=r.slug %}">{{ r.title }}</a>
                                                             </li>
                                                         {% endfor %}
                                                     </ul>

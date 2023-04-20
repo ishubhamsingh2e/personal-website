@@ -53,13 +53,12 @@ def blog(request):
 
 
 @cache_page(60 * 1440 * 15, key_prefix="article")
-def article(request, year, month, day, slug):
+def article(request, slug):
     _article = cache.get(f"{slug}")
     if not _article:
         _article = get_object_or_404(
             Blog,
             status='published',
-            date=f"{year}-{month}-{day}",
             slug=slug
         )
         cache.set(f"{slug}", _article, timeout=60 * 1440 * 30)
